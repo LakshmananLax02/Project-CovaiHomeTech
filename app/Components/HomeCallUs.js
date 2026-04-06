@@ -15,7 +15,7 @@ const CallToAction = () => {
             Old Ac Sale Purchase & AC Rentals, Emergency Rent & Purchase
           </p>
           
-          <button className="bg-[#002d62] hover:bg-[#001d42] text-white font-bold py-4 px-10 rounded-2xl transition-all duration-300 shadow-xl active:scale-95">
+          <button className="bg-[#002d62] hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-2xl transition-all duration-300 shadow-xl active:scale-95">
             Call us now
           </button>
         </div>

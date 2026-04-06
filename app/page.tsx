@@ -10,6 +10,10 @@ import HomeWhyChooseUs from './Components/HomeWhyChooseUs'
 
 import HowWeCanHelp from './Components/HowWeCanHelp'
 
+import HomeTestimonials from './Components/HomeTestimonials'
+
+import HomeFAQ from './Components/Homefaq'
+
 import HomeCallUs from './Components/HomeCallUs'
 
 export default function Home() {
@@ -21,6 +25,8 @@ export default function Home() {
     <MarqueeBrands/>
     <HomeWhyChooseUs/>
     <HowWeCanHelp/>
+    <HomeTestimonials/>
+    <HomeFAQ/>
     <HomeCallUs/>
     </>
   );
