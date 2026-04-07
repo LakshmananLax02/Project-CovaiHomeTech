@@ -19,17 +19,6 @@ const commonProblems = [
   "Complete cleaning and preventive maintenance"
 ];
 
-const brands = [
-  { name: "LG", logo: "/logos/lg.png" },
-  { name: "Samsung", logo: "/logos/samsung.png" },
-  { name: "IFB", logo: "/logos/ifb.png" },
-  { name: "Bosch", logo: "/logos/bosch.png" },
-  { name: "Whirlpool", logo: "/logos/whirlpool.png" },
-  { name: "Haier", logo: "/logos/haier.png" },
-  { name: "Godrej", logo: "/logos/godrej.png" },
-  { name: "Panasonic", logo: "/logos/panasonic.png" },
-];
-
 export default function WashingMachineDetail() {
   return (
     <section className="py-12 px-6 max-w-7xl mx-auto font-sans text-black">
@@ -45,7 +34,7 @@ export default function WashingMachineDetail() {
       {/* Main Hero Image */}
       <div className="relative w-full h-[400px] rounded-[2rem] overflow-hidden mb-12 shadow-lg">
         <Image 
-          src="/images/washing-machine-hero.jpg" 
+          src="/images/WashMachineimg.png" 
           alt="Technician repairing washing machine" 
           fill 
           className="object-cover"
@@ -94,7 +83,7 @@ export default function WashingMachineDetail() {
 
         {/* Right Column: Sidebar */}
         <div className="space-y-6">
-          <div className="border border-slate-100 rounded-3xl p-8 shadow-sm bg-white">
+          <div className="border border-slate-100 rounded-3xl p-8 shadow-sm bg-white overflow-hidden">
             <h3 className="text-lg font-bold mb-4">Service area available</h3>
             <p className="text-slate-500 text-xs leading-relaxed mb-6">
               We serve customers across all major Coimbatore areas — 
@@ -104,12 +93,33 @@ export default function WashingMachineDetail() {
             
             <div className="border-t border-slate-100 pt-6">
               <h3 className="text-lg font-bold mb-6">Brands we service</h3>
-              <div className="grid grid-cols-4 gap-4 mb-8">
-                {brands.map((brand, i) => (
-                  <div key={i} className="relative h-8 w-full grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
-                    <Image src={brand.logo} alt={brand.name} fill className="object-contain" />
+              
+              {/* Infinite Marquee Section */}
+              <div className="relative flex flex-col gap-6 mb-8 overflow-hidden">
+                
+                {/* Row 1: Top Logos */}
+                <div className="flex w-[200%] animate-marquee">
+                  <div className="flex shrink-0 w-1/2">
+                    <img src="/images/marqueetopimg.png" alt="Brands Group 1" className="h-10 w-full object-contain px-4" />
                   </div>
-                ))}
+                  <div className="flex shrink-0 w-1/2">
+                    <img src="/images/marqueetopimg.png" alt="Brands Group 1" className="h-10 w-full object-contain px-4" />
+                  </div>
+                </div>
+
+                {/* Row 2: Bottom Logos */}
+                <div className="flex w-[200%] animate-marquee">
+                  <div className="flex shrink-0 w-1/2">
+                    <img src="/images/marqueetop2.png" alt="Brands Group 2" className="h-10 w-full object-contain px-4" />
+                  </div>
+                  <div className="flex shrink-0 w-1/2">
+                    <img src="/images/marqueetop2.png" alt="Brands Group 2" className="h-10 w-full object-contain px-4" />
+                  </div>
+                </div>
+
+                {/* Edge Fades for a cleaner look */}
+                <div className="absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-white to-transparent z-10" />
+                <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-white to-transparent z-10" />
               </div>
               
               <button className="w-full bg-[#003366] text-white font-bold py-4 rounded-xl hover:bg-[#FF6600] transition-colors shadow-md">

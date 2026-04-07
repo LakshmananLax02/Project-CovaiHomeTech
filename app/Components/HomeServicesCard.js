@@ -5,25 +5,25 @@ import { ArrowRight } from 'lucide-react';
 const services = [
   { 
     title: "Ac repair & Service", 
-    img: "/ac-service.jpg", 
+    img: "/images/ACrepairimg.png", 
     href: "/WashingMachineServices", // Updated to follow standard slug patterns
     points: ["Installation & uninstallation", "Gas refilling", "Cooling issues"] 
   },
   { 
     title: "Washing machine repair", 
-    img: "/washing-service.jpg", 
+    img: "/images/WMrepairimg.png", 
     href: "/WashingMachineServices", // Linking to your specific page
     points: ["Drum issues", "Noise problems", "Motor & PCB repairs"]
   },
   { 
     title: "Tv repair", 
-    img: "/tv-service.jpg", 
+    img: "/images/TVrepairimg.png", 
     href: "/services/tv-repair",
     points: ["Display repair", "Sound issues", "Motherboard fixes"]
   },
   { 
     title: "Refrigerator repair", 
-    img: "/fridge-service.jpg", 
+    img: "/images/Refridgerepairimg.png", 
     href: "/services/refrigerator",
     points: ["Cooling solutions", "Compressor repair", "Gas charging"]
   },
@@ -42,11 +42,11 @@ export default function ServiceGrid() {
         </div>
 
         {/* The Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="relative aspect-[3/4] rounded-[2.5rem] overflow-hidden group shadow-2xl"
+              className="relative aspect-[3/4] rounded-[1.5rem] overflow-hidden group shadow-2xl"
             >
               {/* Background Technician Image */}
               <img 
@@ -66,8 +66,8 @@ export default function ServiceGrid() {
 
               {/* The Floating Gradient Content Box */}
               <div className="absolute bottom-4 left-4 right-4 z-10">
-                <div className="bg-gradient-to-r from-[#8B5E3C] to-[#1E4D7B] rounded-[1.8rem] p-6 text-center min-h-[145px] flex flex-col justify-center items-center shadow-inner">
-                  <h3 className="text-white font-bold text-xl mb-2 leading-tight">
+                <div className="bg-gradient-to-r from-[#8B5E3C] to-[#1E4D7B] rounded-[1.8rem] p-3 text-center min-h-[45px] flex flex-col justify-center items-center shadow-inner">
+                  <h3 className="text-white font-bold text-l mb-2 leading-tight">
                     {service.title}
                   </h3>
                   <p className="text-white/80 text-xs font-medium leading-relaxed">

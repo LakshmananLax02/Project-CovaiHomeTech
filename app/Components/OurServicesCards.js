@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 const serviceData = [
   {
     title: "Washing Machine Services",
-    image: "/washing-machine.jpg", // Replace with your image paths
+    image: "/images/WMrepairimg.png", // Replace with your image paths
     points: [
       "Drum not rotating / draining issues",
       "Noise and vibration problems",
@@ -14,7 +14,7 @@ const serviceData = [
   },
   {
     title: "Refrigerator Repair Services",
-    image: "/fridge-repair.jpg",
+    image: "/images/Refridgerepairimg.png",
     points: [
       "Cooling & gas refill solutions",
       "Compressor & thermostat replacement",
@@ -24,7 +24,7 @@ const serviceData = [
   },
   {
     title: "Ac repair and service",
-    image: "/ac-repair.jpg",
+    image: "/images/ACrepairimg.png",
     points: [
       "Installation & uninstallation",
       "Gas refilling and leakage repair",
@@ -34,7 +34,7 @@ const serviceData = [
   },
   {
     title: "Television (TV) Repair Services",
-    image: "/tv-repair.jpg",
+    image: "/images/TVrepairimg.png",
     points: [
       "Display & backlight repair",
       "Sound or signal issues",
@@ -60,7 +60,7 @@ export default function ServicesSection() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceData.map((service, index) => (
-            <div key={index} className="bg-[#F8F9FA] rounded-3xl p-5 flex flex-col shadow-sm border border-slate-100">
+            <div key={index} className="bg-[#F8F9FA] rounded-3xl p-5 flex flex-col shadow-2xl border border-slate-100">
               
               {/* Image Container with Arrow Overlay */}
               <div className="relative h-64 w-full rounded-2xl overflow-hidden mb-6">
