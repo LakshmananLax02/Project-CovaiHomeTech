@@ -49,7 +49,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-white">
+    <section className="py-10 px-6 md:px-6 lg:px-10 bg-white">
       {/* 1. Main Container with Gradient Background */}
       <div className="relative rounded-[40px] bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] p-8 md:p-16 overflow-hidden">
         

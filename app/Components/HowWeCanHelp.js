@@ -30,7 +30,7 @@ export default function HowWeCanHelp() {
   ];
 
   return (
-    <section className="py-12 md:py-20 px-4 md:px-12 lg:px-24 bg-white overflow-hidden">
+    <section className="py-12 md:py-20 px-8 bg-white overflow-hidden">
       {/* 1. Header Section */}
       <div className="text-center mb-12 md:mb-16 flex flex-col items-center">
         <span className="bg-[#FF5C00] text-white text-[10px] font-black px-5 py-1.5 rounded-full uppercase tracking-[0.2em] shadow-lg shadow-orange-500/20">
@@ -44,10 +44,10 @@ export default function HowWeCanHelp() {
         </p>
       </div>
 
-      {/* 2. Content Grid - Reordered for Mobile (Image first, then steps) */}
+      {/* 2. Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
-        {/* Featured Image - Appears first on mobile with order-first lg:order-last */}
+        {/* Featured Image */}
         <div className="relative pt-2 order-first lg:order-last">
           <div className="relative rounded-[30px] md:rounded-[50px] overflow-hidden border-[8px] md:border-[12px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] aspect-square md:aspect-[4/5] lg:h-[550px]">
             <Image 
@@ -70,17 +70,14 @@ export default function HowWeCanHelp() {
                 key={index}
                 className="relative flex gap-4 md:gap-8 group cursor-pointer"
                 onMouseEnter={() => setActiveIndex(index)}
-                onClick={() => setActiveIndex(index)} // Better for touch screens
+                onClick={() => setActiveIndex(index)}
               >
-                {/* Responsive Sidebar Line: Moves from -left-10 (desktop) to -left-4 (mobile) */}
-                <div className={`absolute -left-4 md:-left-10 top-0 bottom-0 w-1 md:w-1.5 bg-[#FF5C00] rounded-full transition-all duration-300 transform ${isActive ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} />
+                <div className={`absolute -left-4 top-0 bottom-0 w-1 md:w-1.5 bg-[#FF5C00] rounded-full transition-all duration-300 transform ${isActive ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} />
                 
-                {/* Icon Box - Scaled down for mobile */}
                 <div className={`flex-shrink-0 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-xl md:rounded-2xl transition-all duration-300 ${isActive ? 'bg-orange-50 text-[#FF5C00]' : 'bg-gray-50 text-slate-400'}`}>
                   {React.cloneElement(step.icon, { size: typeof window !== 'undefined' && window.innerWidth < 768 ? 20 : 24 })}
                 </div>
                 
-                {/* Text Content */}
                 <div className="pr-2">
                   <h3 className={`text-lg md:text-2xl font-bold transition-colors duration-300 ${isActive ? 'text-[#FF5C00]' : 'text-slate-900'}`}>
                     {step.title}

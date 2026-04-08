@@ -2,16 +2,27 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, MapPin, Mail, Clock, ChevronDown, Menu, X, WashingMachine, Refrigerator, AirVent, Tv } from "lucide-react";
+import { 
+  Phone, MapPin, Mail, Clock, ChevronDown, 
+  Menu, X, WashingMachine, Refrigerator, AirVent, Tv 
+} from "lucide-react";
 
-// Social Icon Components (To avoid library export issues)
+// --- Sub-components for cleaner code ---
+const SocialIcons = () => (
+  <div className="flex gap-4">
+    <FacebookIcon />
+    <TwitterIcon />
+    <InstagramIcon />
+    <GoogleIcon />
+  </div>
+);
+
 const FacebookIcon = () => (
   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
 );
 const InstagramIcon = () => (
   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
 );
-
 const GoogleIcon = () => (
   <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
     <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -20,11 +31,9 @@ const GoogleIcon = () => (
     <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.83c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
   </svg>
 );
-
 const TwitterIcon = () => (
   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+    <path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
   </svg>
 );
 
@@ -35,12 +44,22 @@ const brandData = {
   tv: ["Sony", "Samsung", "LG", "MI (Xiaomi)", "OnePlus", "TCL", "Panasonic", "Haier", "Vu", "Onida", "Philips", "Realme"]
 };
 
+const categories = [
+  { id: "washing", label: "Washing Machine", icon: <WashingMachine size={18} /> },
+  { id: "fridge", label: "Refrigerator", icon: <Refrigerator size={18} /> },
+  { id: "ac", label: "Air conditioner(AC)", icon: <AirVent size={18} /> },
+  { id: "tv", label: "TV", icon: <Tv size={18} /> },
+];
+
 export default function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [mobileActiveTab, setMobileActiveTab] = useState("washing");
   const [activeTab, setActiveTab] = useState("washing");
   const servicesRef = useRef(null);
 
+  // Close desktop dropdown on outside click
   useEffect(() => {
     function handleClickOutside(e) {
       if (servicesRef.current && !servicesRef.current.contains(e.target)) {
@@ -51,66 +70,68 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const categories = [
-    { id: "washing", label: "Washing Machine", icon: <WashingMachine size={18} /> },
-    { id: "fridge", label: "Refrigerator", icon: <Refrigerator size={18} /> },
-    { id: "ac", label: "Air conditioner(AC)", icon: <AirVent size={18} /> },
-    { id: "tv", label: "TV", icon: <Tv size={18} /> },
-  ];
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (isMobileOpen) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "unset";
+  }, [isMobileOpen]);
+
+  const handleMobileClose = () => {
+    setIsMobileOpen(false);
+    setIsMobileServicesOpen(false);
+  };
 
   return (
+
+    <>
     <header className="w-full sticky top-0 z-[100] bg-white shadow-sm font-sans">
-      {/* Top Bar */}
+      {/* 1. TOP BAR (Hidden on Mobile) */}
       <div className="hidden md:flex bg-[#002D62] text-white text-[12px] px-6 lg:px-24 py-2 justify-between items-center">
-        <div className="flex items-center gap-20">
-          <div className="flex gap-3"><FacebookIcon /><TwitterIcon/><InstagramIcon /><GoogleIcon/></div>
-          <span className="flex items-center gap-1.5 border-l border-white/20 pl-4">
-            <Clock size={13} className="text-[#FF5C00]" /> Mon – Fri 8:00 – 6:30
+        <div className="flex items-center gap-8">
+          <SocialIcons />
+          <span className="flex items-center gap-1.5 border-l border-white/20 pl-4 uppercase tracking-wider">
+            <Clock size={13} className="text-[#FF5C00]" /> Mon – Sat 8:00 – 8:00
           </span>
         </div>
         <div className="flex items-center gap-6">
           <span className="flex items-center gap-1.5"><MapPin size={13} className="text-[#FF5C00]" /> Coimbatore, TN</span>
-          <span className="flex items-center gap-1.5"><Phone size={13} className="text-[#FF5C00]" /> (88) 00-11-52-44</span>
-                    <span className="flex items-center gap-1.5"><Mail size={13} className="text-[#FF5C00]" /> covaihometech@gmail.com</span>
-
+          <span className="flex items-center gap-1.5"><Phone size={13} className="text-[#FF5C00]" /> +91 8800115244</span>
+          <span className="flex items-center gap-1.5"><Mail size={13} className="text-[#FF5C00]" /> covaihometech@gmail.com</span>
         </div>
       </div>
 
-      {/* Main Nav */}
-      <nav className="flex justify-between items-center px-6 lg:px-24 py-4">
-        <Link href="/" className="flex items-center gap-2">
-          {/* LOGO WITH IMAGE ELEMENT */}
+      {/* 2. MAIN NAVIGATION */}
+      <nav className="flex justify-between items-center px-6 lg:px-24 py-4 relative bg-white">
+        <Link href="/" className="flex items-center">
           <Image 
             src="/images/logo.png" 
             alt="Covai Home Tech Logo" 
-            width={100} 
-            height={50} 
-            className="object-contain"
+            width={70} 
+            height={35} 
+            className="object-contain w-auto h-auto"
+            priority
           />
         </Link>
 
+        {/* Desktop Menu Links */}
         <div className="hidden lg:flex items-center gap-8 font-bold text-[15px] text-slate-800">
-          <Link href="/" className="hover:text-[#FF5C00]">Home</Link>
-          <Link href="/AboutUs" className="hover:text-[#FF5C00]">About us</Link>
+          <Link href="/" className="hover:text-[#FF5C00] transition-colors">Home</Link>
+          <Link href="/AboutUs" className="hover:text-[#FF5C00] transition-colors">About us</Link>
           
-          {/* MEGA DROPDOWN */}
+          {/* Desktop Mega Dropdown */}
           <div className="relative" ref={servicesRef}>
-            <Link href="/OurServices">
             <button 
               onMouseEnter={() => setIsServicesOpen(true)}
-              className="flex items-center gap-1 hover:text-[#FF5C00]"
+              className="flex items-center gap-1 hover:text-[#FF5C00] transition-colors py-2"
             >
-              Services <ChevronDown size={16} className={isServicesOpen ? "rotate-180" : ""} />
+              Services <ChevronDown size={16} className={`transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`} />
             </button>
-
-            </Link>
 
             {isServicesOpen && (
               <div 
-                className="absolute top-full -left-48 w-[800px] bg-white shadow-2xl rounded-xl mt-4 flex border border-slate-100 overflow-hidden"
+                className="absolute top-full -left-48 w-[800px] bg-white shadow-2xl rounded-xl mt-2 flex border border-slate-100 overflow-hidden animate-in fade-in slide-in-from-top-2"
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
-                {/* Left Sidebar */}
                 <div className="w-1/3 bg-slate-50 p-4 border-r border-slate-100">
                   {categories.map((cat) => (
                     <button
@@ -124,8 +145,6 @@ export default function Navbar() {
                     </button>
                   ))}
                 </div>
-
-                {/* Right Content Area */}
                 <div className="w-2/3 p-8">
                   <h4 className="text-[#FF5C00] font-black uppercase text-xs tracking-widest mb-6">Book by brands</h4>
                   <div className="grid grid-cols-3 gap-y-4 gap-x-2">
@@ -144,14 +163,137 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="#" className="hover:text-[#FF5C00]">Our works</Link>
-          <Link href="#" className="hover:text-[#FF5C00]">Contact Us</Link>
+          <Link href="/OurWorks" className="hover:text-[#FF5C00] transition-colors">Our works</Link>
+          <Link href="/ContactUs" className="hover:text-[#FF5C00] transition-colors">Contact Us</Link>
         </div>
 
-        <button className="hidden lg:block bg-[#002D62] text-white px-8 py-3 rounded-full font-bold text-[14px] hover:bg-[#FF5C00] transition-transform active:scale-95">
-          Book Now
-        </button>
+        {/* Mobile Actions & Trigger */}
+        <div className="flex items-center gap-4">
+          <button className="hidden sm:block lg:block bg-[#002D62] text-white px-8 py-3 rounded-full font-bold text-[14px] hover:bg-[#FF5C00] transition-all active:scale-95 shadow-lg shadow-blue-900/10">
+            Book Now
+          </button>
+          
+          <button 
+            className="lg:hidden p-2 text-slate-800 hover:bg-slate-100 rounded-lg transition-colors"
+            onClick={() => setIsMobileOpen(true)}
+          >
+            <Menu size={28} />
+          </button>
+        </div>
       </nav>
+
+      {/* 3. MOBILE OVERLAY MENU */}
+      <div 
+        className={`fixed inset-0 z-[200] lg:hidden transition-all duration-300 ${
+          isMobileOpen ? "visible opacity-100" : "invisible opacity-0"
+        }`}
+      >
+        {/* Backdrop */}
+        <div 
+          className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+          onClick={handleMobileClose}
+        />
+        
+        {/* Menu Content */}
+        <div 
+          className={`absolute top-0 right-0 h-full w-[300px] bg-white shadow-2xl transition-transform duration-300 transform flex flex-col ${
+            isMobileOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="p-6 flex justify-between items-center border-b">
+            <span className="font-black text-[#002D62]">MENU</span>
+            <button onClick={handleMobileClose} className="p-2 hover:bg-slate-100 rounded-full">
+              <X size={24} />
+            </button>
+          </div>
+
+          <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-2 font-bold text-slate-800 text-lg">
+            <Link href="/" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Home</Link>
+            <Link href="/AboutUs" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">About Us</Link>
+
+            {/* ── Mobile Services Accordion ── */}
+            <div className="flex flex-col">
+              <button
+                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                className="flex items-center justify-between py-2 w-full text-left hover:text-[#FF5C00] transition-colors"
+              >
+                <span>Services</span>
+                <ChevronDown
+                  size={18}
+                  className={`transition-transform duration-300 ${isMobileServicesOpen ? "rotate-180 text-[#FF5C00]" : ""}`}
+                />
+              </button>
+
+              {/* Accordion Panel */}
+              <div
+                className={`overflow-hidden transition-all duration-300 ${
+                  isMobileServicesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="bg-slate-50 rounded-xl mt-1 mb-2 overflow-hidden border border-slate-100">
+                  {/* Category Tabs */}
+                  <div className="flex border-b border-slate-200 overflow-x-auto scrollbar-hide">
+                    {categories.map((cat) => (
+                      <button
+                        key={cat.id}
+                        onClick={() => setMobileActiveTab(cat.id)}
+                        className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-2.5 text-[11px] font-bold transition-all border-b-2 ${
+                          mobileActiveTab === cat.id
+                            ? "border-[#FF5C00] text-[#FF5C00] bg-white"
+                            : "border-transparent text-slate-500 hover:text-slate-700"
+                        }`}
+                      >
+                        <span className="w-3.5 h-3.5 flex-shrink-0">{cat.icon}</span>
+                        <span className="whitespace-nowrap">{cat.label}</span>
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Brand Links */}
+                  <div className="p-3">
+                    <p className="text-[9px] font-black uppercase tracking-widest text-[#FF5C00] mb-2 px-1">Book by brands</p>
+                    <div className="grid grid-cols-2 gap-1">
+                      {brandData[mobileActiveTab].map((brand, idx) => (
+                        <Link
+                          key={idx}
+                          href={`/services/${mobileActiveTab}/${brand.toLowerCase()}`}
+                          onClick={handleMobileClose}
+                          className="text-[12px] text-slate-600 hover:text-[#002D62] hover:font-bold transition-all px-2 py-1.5 rounded-md hover:bg-white"
+                        >
+                          {brand}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* ── End Mobile Services Accordion ── */}
+
+            <Link href="/OurWorks" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Our Works</Link>
+            <Link href="/ContactUs" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Contact Us</Link>
+            
+            <div className="pt-6 border-t mt-auto">
+               <div className="flex flex-col gap-4">
+                  <a href="tel:+918800115244" className="flex items-center gap-3 text-sm font-medium text-slate-600">
+                    <Phone size={18} className="text-[#FF5C00]" /> +91 8800115244
+                  </a>
+                  <div className="flex justify-start pt-2">
+                    <SocialIcons />
+                  </div>
+               </div>
+            </div>
+          </div>
+
+          <div className="p-6 border-t">
+            <button className="w-full bg-[#FF5C00] text-white py-4 rounded-xl font-bold shadow-lg shadow-orange-500/20">
+              Book Appointment
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
+
+    </>
   );
 }
