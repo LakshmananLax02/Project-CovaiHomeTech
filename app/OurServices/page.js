@@ -10,6 +10,12 @@ import Testimonials from "../Components/HomeTestimonials"
 
 import HowWeCanHelp from '../Components/HowWeCanHelp'
 
+
+export const metadata = {
+  title: "Our Services | AC, Washing Machine, TV & Refrigerator Repair in Coimbatore",
+  description: "Explore our expert appliance repair services including AC repair, washing machine repair, TV repair, and refrigerator service in Coimbatore. Affordable and quick support.",
+};
+
 export default function OurServices(){
 
     return(

@@ -9,11 +9,11 @@ import HomeServicesCard from '../Components/HomeServicesCard'
 import Homefaq from '../Components/Homefaq'
 
 export const metadata = {
-  title: "Washing Machine Repair Service in Coimbatore | Covai Home Tech",
-  description: "Professional washing machine repair services in Coimbatore for all brands and models. Quick diagnosis, expert technicians, and affordable pricing. Book your service today.",
+  title: "AC Repair & Service in Coimbatore | Covai Home Tech",
+  description: "Expert AC repair and maintenance services in Coimbatore for all brands. Fast cooling issue fixes, gas refill, installation, and servicing by skilled technicians.",
 };
 
-export default function WashingMachineService(){
+export default function ACServicePage(){
 
     return(
         <>

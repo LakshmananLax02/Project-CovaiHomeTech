@@ -6,7 +6,7 @@ const services = [
   { 
     title: "Ac repair & Service", 
     img: "/images/ACrepairimg.png", 
-    href: "/WashingMachineServices",
+    href: "/ACServicePage",
     points: ["Installation & uninstallation", "Gas refilling", "Cooling issues"] 
   },
   { 
@@ -18,13 +18,13 @@ const services = [
   { 
     title: "Tv repair", 
     img: "/images/TVrepairimg.png", 
-    href: "/services/tv-repair",
+    href: "/TVServicePage",
     points: ["Display repair", "Sound issues", "Motherboard fixes"]
   },
   { 
     title: "Refrigerator repair", 
     img: "/images/Refridgerepairimg.png", 
-    href: "/services/refrigerator",
+    href: "/FridgeServicePage",
     points: ["Cooling solutions", "Compressor repair", "Gas charging"]
   },
 ];

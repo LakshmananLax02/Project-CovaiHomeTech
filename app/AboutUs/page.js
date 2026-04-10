@@ -9,6 +9,11 @@ import Testimonials from '../Components/HomeTestimonials'
 import Homefaq from '../Components/Homefaq'
 import { Home } from "lucide-react";
 
+export const metadata = {
+  title: " About Covai Home Tech | Trusted Appliance Repair Experts in Coimbatore",
+  description: " Learn about Covai Home Tech, your trusted home appliance repair service provider in Coimbatore. Experienced technicians, quality service, and customer satisfaction guaranteed.",
+};
+
 export default function AboutUs(){
 
     return(

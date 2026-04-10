@@ -38,14 +38,64 @@ const TwitterIcon = () => (
 );
 
 const brandData = {
-  washing: ["LG", "Samsung", "IFB", "Bosch", "Whirlpool", "Haier", "Godrej", "Panasonic", "Onida", "Electrolux", "Videocon"],
-  fridge: ["LG", "Samsung", "Whirlpool", "Haier", "Godrej", "Bosch", "Panasonic", "Hitachi", "Kelvinator", "Electrolux", "Videocon"],
-  ac: ["Voltas", "Blue Star", "Daikin", "LG", "Samsung", "Carrier", "Hitachi", "Panasonic", "O General", "Lloyd", "Whirlpool", "Haier"],
-  tv: ["Sony", "Samsung", "LG", "MI (Xiaomi)", "OnePlus", "TCL", "Panasonic", "Haier", "Vu", "Onida", "Philips", "Realme"]
+  washingmachine: [
+    { name: "LG", slug: "lgwashingmachine" },
+    { name: "Samsung", slug: "samsungwashingmachine" },
+    { name: "IFB", slug: "ifbwashingmachine" },
+    { name: "Bosch", slug: "boschwashingmachine" },
+    { name: "Whirlpool", slug: "whirlpoolwashingmachine" },
+    { name: "Haier", slug: "haier" },
+    { name: "Godrej", slug: "godrej" },
+    { name: "Panasonic", slug: "panasonic" },
+    { name: "Onida", slug: "onida" },
+    { name: "Electrolux", slug: "electrolux" },
+    { name: "Videocon", slug: "videocon" }
+  ],
+  fridge: [
+    { name: "LG", slug: "lgfridge" },
+    { name: "Samsung", slug: "samsung" },
+    { name: "Whirlpool", slug: "whirlpool" },
+    { name: "Haier", slug: "haier" },
+    { name: "Godrej", slug: "godrej" },
+    { name: "Bosch", slug: "bosch" },
+    { name: "Panasonic", slug: "panasonic" },
+    { name: "Hitachi", slug: "hitachi" },
+    { name: "Kelvinator", slug: "kelvinator" },
+    { name: "Electrolux", slug: "electrolux" },
+    { name: "Videocon", slug: "videocon" }
+  ],
+  ac: [
+    { name: "Voltas", slug: "voltasac" },
+    { name: "Blue Star", slug: "blue-star" },
+    { name: "Daikin", slug: "daikin" },
+    { name: "LG", slug: "lg" },
+    { name: "Samsung", slug: "samsung" },
+    { name: "Carrier", slug: "carrier" },
+    { name: "Hitachi", slug: "hitachi" },
+    { name: "Panasonic", slug: "panasonic" },
+    { name: "O General", slug: "o-general" },
+    { name: "Lloyd", slug: "lloyd" },
+    { name: "Whirlpool", slug: "whirlpool" },
+    { name: "Haier", slug: "haier" }
+  ],
+  tv: [
+    { name: "Sony", slug: "sonytv" },
+    { name: "Samsung", slug: "samsung" },
+    { name: "LG", slug: "lg" },
+    { name: "MI (Xiaomi)", slug: "mi-xiaomi" },
+    { name: "OnePlus", slug: "oneplus" },
+    { name: "TCL", slug: "tcl" },
+    { name: "Panasonic", slug: "panasonic" },
+    { name: "Haier", slug: "haier" },
+    { name: "Vu", slug: "vu" },
+    { name: "Onida", slug: "onida" },
+    { name: "Philips", slug: "philips" },
+    { name: "Realme", slug: "realme" }
+  ]
 };
 
 const categories = [
-  { id: "washing", label: "Washing Machine", icon: <WashingMachine size={18} /> },
+  { id: "washingmachine", label: "Washing Machine", icon: <WashingMachine size={18} /> },
   { id: "fridge", label: "Refrigerator", icon: <Refrigerator size={18} /> },
   { id: "ac", label: "Air conditioner(AC)", icon: <AirVent size={18} /> },
   { id: "tv", label: "TV", icon: <Tv size={18} /> },
@@ -55,8 +105,8 @@ export default function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
-  const [mobileActiveTab, setMobileActiveTab] = useState("washing");
-  const [activeTab, setActiveTab] = useState("washing");
+  const [mobileActiveTab, setMobileActiveTab] = useState("washingmachine");
+  const [activeTab, setActiveTab] = useState("washingmachine");
   const servicesRef = useRef(null);
 
   // Close desktop dropdown on outside click
@@ -120,12 +170,14 @@ export default function Navbar() {
           
           {/* Desktop Mega Dropdown */}
           <div className="relative" ref={servicesRef}>
+            <Link href="/OurServices">
             <button 
               onMouseEnter={() => setIsServicesOpen(true)}
               className="flex items-center gap-1 hover:text-[#FF5C00] transition-colors py-2"
             >
               Services <ChevronDown size={16} className={`transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`} />
             </button>
+            </Link>
 
             {isServicesOpen && (
               <div 
@@ -148,15 +200,15 @@ export default function Navbar() {
                 <div className="w-2/3 p-8">
                   <h4 className="text-[#FF5C00] font-black uppercase text-xs tracking-widest mb-6">Book by brands</h4>
                   <div className="grid grid-cols-3 gap-y-4 gap-x-2">
-                    {brandData[activeTab].map((brand, idx) => (
-                      <Link 
-                        key={idx} 
-                        href={`/services/${activeTab}/${brand.toLowerCase()}`}
-                        className="text-[13px] text-slate-600 hover:text-[#002D62] hover:font-bold transition-all"
-                      >
-                        {brand} {categories.find(c => c.id === activeTab).label}
-                      </Link>
-                    ))}
+                   {brandData[activeTab].map((brand, idx) => (
+  <Link 
+    key={idx} 
+    href={`/Services/${activeTab}/${brand.slug}`} // Changed from brand.toLowerCase()
+    className="text-[13px] text-slate-600 hover:text-[#002D62] hover:font-bold transition-all"
+  >
+    {brand.name} {categories.find(c => c.id === activeTab).label}
+  </Link>
+))}
                   </div>
                 </div>
               </div>
@@ -253,16 +305,16 @@ export default function Navbar() {
                   <div className="p-3">
                     <p className="text-[9px] font-black uppercase tracking-widest text-[#FF5C00] mb-2 px-1">Book by brands</p>
                     <div className="grid grid-cols-2 gap-1">
-                      {brandData[mobileActiveTab].map((brand, idx) => (
-                        <Link
-                          key={idx}
-                          href={`/services/${mobileActiveTab}/${brand.toLowerCase()}`}
-                          onClick={handleMobileClose}
-                          className="text-[12px] text-slate-600 hover:text-[#002D62] hover:font-bold transition-all px-2 py-1.5 rounded-md hover:bg-white"
-                        >
-                          {brand}
-                        </Link>
-                      ))}
+                     {brandData[mobileActiveTab].map((brand, idx) => (
+  <Link
+    key={idx}
+    href={`/Services/${mobileActiveTab}/${brand.slug}`} // Changed from brand.toLowerCase()
+    onClick={handleMobileClose}
+    className="text-[12px] text-slate-600 hover:text-[#002D62] hover:font-bold transition-all px-2 py-1.5 rounded-md hover:bg-white"
+  >
+    {brand.name}
+  </Link>
+))}
                     </div>
                   </div>
                 </div>

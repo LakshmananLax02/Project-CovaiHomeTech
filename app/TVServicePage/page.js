@@ -9,11 +9,11 @@ import HomeServicesCard from '../Components/HomeServicesCard'
 import Homefaq from '../Components/Homefaq'
 
 export const metadata = {
-  title: "Washing Machine Repair Service in Coimbatore | Covai Home Tech",
-  description: "Professional washing machine repair services in Coimbatore for all brands and models. Quick diagnosis, expert technicians, and affordable pricing. Book your service today.",
+  title: "TV Repair Service in Coimbatore | LED, LCD & Smart TV Repair",
+  description: "Reliable TV repair services in Coimbatore for LED, LCD, and Smart TVs. Screen issues, sound problems, motherboard repair, and doorstep service available.",
 };
 
-export default function WashingMachineService(){
+export default function TVServicePage(){
 
     return(
         <>
