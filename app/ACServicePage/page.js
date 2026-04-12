@@ -1,4 +1,4 @@
-import WashingMachineServices from '../Components/WashingMachineServices'
+import ACRepairServices from '../Components/ACRepairServices'
 
 import HowWeCanHelp from '../Components/HowWeCanHelp'
 
@@ -18,7 +18,7 @@ export default function ACServicePage(){
     return(
         <>
 
-        <WashingMachineServices/>
+        <ACRepairServices/>
 
          <HowWeCanHelp/>
 

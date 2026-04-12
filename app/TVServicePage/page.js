@@ -1,4 +1,4 @@
-import WashingMachineServices from '../Components/WashingMachineServices'
+import TVRepairServices from '../Components/TVRepairServices'
 
 import HowWeCanHelp from '../Components/HowWeCanHelp'
 
@@ -18,7 +18,7 @@ export default function TVServicePage(){
     return(
         <>
 
-        <WashingMachineServices/>
+        <TVRepairServices/>
 
          <HowWeCanHelp/>
 

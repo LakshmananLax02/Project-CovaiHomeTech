@@ -44,39 +44,39 @@ const brandData = {
     { name: "IFB", slug: "ifbwashingmachine" },
     { name: "Bosch", slug: "boschwashingmachine" },
     { name: "Whirlpool", slug: "whirlpoolwashingmachine" },
-    { name: "Haier", slug: "haier" },
-    { name: "Godrej", slug: "godrej" },
-    { name: "Panasonic", slug: "panasonic" },
-    { name: "Onida", slug: "onida" },
-    { name: "Electrolux", slug: "electrolux" },
-    { name: "Videocon", slug: "videocon" }
+    { name: "Haier", slug: "haierwashingmachine" },
+    { name: "Godrej", slug: "godrejwashingmachine" },
+    { name: "Panasonic", slug: "panasonicwashingmachine" },
+    { name: "Onida", slug: "onidawashingmachine" },
+    { name: "Electrolux", slug: "electroluxwashingmachine" },
+    { name: "Videocon", slug: "videoconwashingmachine" }
   ],
   fridge: [
-    { name: "LG", slug: "lgfridge" },
-    { name: "Samsung", slug: "samsung" },
-    { name: "Whirlpool", slug: "whirlpool" },
-    { name: "Haier", slug: "haier" },
-    { name: "Godrej", slug: "godrej" },
-    { name: "Bosch", slug: "bosch" },
-    { name: "Panasonic", slug: "panasonic" },
-    { name: "Hitachi", slug: "hitachi" },
-    { name: "Kelvinator", slug: "kelvinator" },
-    { name: "Electrolux", slug: "electrolux" },
-    { name: "Videocon", slug: "videocon" }
+    { name: "LG", slug: "lgrefrigerator" },
+    { name: "Samsung", slug: "samsungrefrigerator" },
+    { name: "Whirlpool", slug: "whirlpoolrefrigerator" },
+    { name: "Haier", slug: "haierrefrigerator" },
+    { name: "Godrej", slug: "godrejrefrigerator" },
+    { name: "Bosch", slug: "boschrefrigerator" },
+    { name: "Panasonic", slug: "panasonicrefrigerator" },
+    { name: "Hitachi", slug: "hitachirefrigerator" },
+    { name: "Kelvinator", slug: "kelvinatorrefrigerator" },
+    { name: "Electrolux", slug: "electroluxrefrigerator" },
+    { name: "Videocon", slug: "videoconrefrigerator" }
   ],
   ac: [
     { name: "Voltas", slug: "voltasac" },
-    { name: "Blue Star", slug: "blue-star" },
-    { name: "Daikin", slug: "daikin" },
-    { name: "LG", slug: "lg" },
-    { name: "Samsung", slug: "samsung" },
-    { name: "Carrier", slug: "carrier" },
-    { name: "Hitachi", slug: "hitachi" },
-    { name: "Panasonic", slug: "panasonic" },
-    { name: "O General", slug: "o-general" },
-    { name: "Lloyd", slug: "lloyd" },
-    { name: "Whirlpool", slug: "whirlpool" },
-    { name: "Haier", slug: "haier" }
+    { name: "Blue Star", slug: "bluestarac" },
+    { name: "Daikin", slug: "daikinac" },
+    { name: "LG", slug: "lgac" },
+    { name: "Samsung", slug: "samsungac" },
+    { name: "Carrier", slug: "carrierac" },
+    { name: "Hitachi", slug: "hitachiac" },
+    { name: "Panasonic", slug: "panasonicac" },
+    { name: "O General", slug: "ogeneralac" },
+    { name: "Lloyd", slug: "lloydac" },
+    { name: "Whirlpool", slug: "whirlpoolac" },
+    { name: "Haier", slug: "haierac" }
   ],
   tv: [
     { name: "Sony", slug: "sonytv" },
@@ -203,7 +203,7 @@ export default function Navbar() {
                    {brandData[activeTab].map((brand, idx) => (
   <Link 
     key={idx} 
-    href={`/Services/${activeTab}/${brand.slug}`} // Changed from brand.toLowerCase()
+    href={`/services/${activeTab}/${brand.slug}`} // Changed from brand.toLowerCase()
     className="text-[13px] text-slate-600 hover:text-[#002D62] hover:font-bold transition-all"
   >
     {brand.name} {categories.find(c => c.id === activeTab).label}
@@ -308,7 +308,7 @@ export default function Navbar() {
                      {brandData[mobileActiveTab].map((brand, idx) => (
   <Link
     key={idx}
-    href={`/Services/${mobileActiveTab}/${brand.slug}`} // Changed from brand.toLowerCase()
+    href={`/services/${mobileActiveTab}/${brand.slug}`} // Changed from brand.toLowerCase()
     onClick={handleMobileClose}
     className="text-[12px] text-slate-600 hover:text-[#002D62] hover:font-bold transition-all px-2 py-1.5 rounded-md hover:bg-white"
   >

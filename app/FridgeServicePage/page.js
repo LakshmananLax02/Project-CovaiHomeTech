@@ -1,4 +1,4 @@
-import WashingMachineServices from '../Components/WashingMachineServices'
+import RefrigeratorRepairServices from '../Components/RefrigeratorRepairServices'
 
 import HowWeCanHelp from '../Components/HowWeCanHelp'
 
@@ -18,7 +18,7 @@ export default function FridgeServicePage(){
     return(
         <>
 
-        <WashingMachineServices/>
+        <RefrigeratorRepairServices/>
 
          <HowWeCanHelp/>
 
