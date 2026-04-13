@@ -25,11 +25,11 @@ export default function samsungwashingmachine(){
         <>
        <div className="bg-white min-h-screen">
       {/* 1. HEADER SECTION (Dark Slate) */}
-      <div className="bg-slate-900 pt-10 pb-12 rounded-b-[3rem] md:rounded-b-[5rem] shadow-2xl relative overflow-hidden">
+      <div className="bg-[#002D62] pt-10 pb-12 rounded-b-[3rem] md:rounded-b-[5rem] shadow-2xl relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <div className="text-center mb-8">
             <span className="bg-orange-600 text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">
-              Covai Home Tech Official
+              Covai Home Tech
             </span>
             <h1 className="text-3xl md:text-5xl font-black text-white mt-4">
               Samsung Washing Machine <br />
@@ -51,7 +51,7 @@ export default function samsungwashingmachine(){
               
               <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
                 <div className="bg-[#FF5C00] text-white px-6 py-2 rounded-2xl shadow-xl inline-block mb-3">
-                  <span className="font-black italic text-xl">SAMSUNG CARE</span>
+                 <span className="font-black italic text-xl">SAMSUNG</span> 
                 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>
               </div>
@@ -146,7 +146,7 @@ export default function samsungwashingmachine(){
 
           {/* Sidebar: Why Choose & CTA */}
           <aside className="space-y-8">
-            <div className="bg-blue-900 text-white p-10 rounded-[3rem] shadow-2xl sticky top-24">
+            <div className="bg-[#002D62] text-white p-10 rounded-[3rem] shadow-2xl sticky top-24">
               <h3 className="text-2xl font-black mb-8 text-orange-400 leading-tight">
                 Why Choose <br />Covai Home Tech
               </h3>

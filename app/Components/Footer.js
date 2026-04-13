@@ -36,6 +36,7 @@ export default function Footer() {
                 src="/images/Logo.png" 
                 alt="Covai Home Tech Logo"
                 fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-contain"
                 priority
               />
