@@ -31,7 +31,7 @@ export default function Footer() {
         {/* 1. Header - Reduced bottom margin from mb-16 to mb-8 */}
         <div className="mb-8">
           <div className="flex flex-col sm:flex-row items-center sm:items-end gap-6">
-            <div className="relative w-28 h-28 transition-all hover:scale-105 duration-500">
+            <div className="relative w-30 h-18 transition-all hover:scale-105 duration-500 bg-white rounded-xl">
               <Image 
                 src="/images/Logo.png" 
                 alt="Covai Home Tech Logo"

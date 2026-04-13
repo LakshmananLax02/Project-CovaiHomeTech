@@ -16,6 +16,8 @@ import HomeFAQ from './Components/Homefaq'
 
 import HomeCallUs from './Components/HomeCallUs'
 
+import DisclaimerSection from './Components/DisclaimerSection'
+
 
 
 export const metadata = {
@@ -55,6 +57,7 @@ export default function Home() {
     <HomeTestimonials/>
     <HomeFAQ/>
     <HomeCallUs/>
+    <DisclaimerSection/>
     </>
   );
 }

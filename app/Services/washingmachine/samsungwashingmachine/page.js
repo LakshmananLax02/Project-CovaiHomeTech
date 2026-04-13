@@ -1,6 +1,5 @@
 
-
-import React from 'react';
+import DisclaimerSection from "../../../Components/DisclaimerSection";
 
 export const metadata = {
   title: "Samsung Washing Machine Service in Coimbatore | Covai Home Tech",
@@ -25,7 +24,7 @@ export default function samsungwashingmachine(){
         <>
        <div className="bg-white min-h-screen">
       {/* 1. HEADER SECTION (Dark Slate) */}
-      <div className="bg-[#002D62] pt-10 pb-12 rounded-b-[3rem] md:rounded-b-[5rem] shadow-2xl relative overflow-hidden">
+      <div className="bg-[#002D62] pt-10 pb-12   shadow-2xl relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <div className="text-center mb-8">
             <span className="bg-orange-600 text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">
@@ -41,18 +40,25 @@ export default function samsungwashingmachine(){
 
           {/* BIG IMAGE CONTAINER (At the bottom of the header section) */}
           <div className="mt-16 w-full">
-            <div className="relative aspect-[21/9] rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl group">
-              <img 
-                src="/images/WashMachineimg.png" 
+ <div className="relative aspect-[10/11] rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl group">              <img 
+                src="/washingmachine/Samsung.jpg" 
                 alt="Professional Samsung Washing Machine Repair Service" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
               
               <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
-                <div className="bg-[#FF5C00] text-white px-6 py-2 rounded-2xl shadow-xl inline-block mb-3">
-                 <span className="font-black italic text-xl">SAMSUNG</span> 
-                </div>
+   <div className="bg-[#FF5C00] text-white px-6 py-2 rounded-2xl shadow-xl flex items-center justify-between mb-3 w-full max-w-sm">
+  {/* Text stays on the far left */}
+  <span className="font-black italic text-xl">SAMSUNG</span>
+
+  {/* Logo stays on the far right */}
+  <img 
+    src="/washingmachinelogos/Samsung.png" 
+    alt="Samsung Logo" 
+    className="h-10 w-auto object-contain md:h-15" 
+  />
+</div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>
               </div>
             </div>
@@ -61,7 +67,7 @@ export default function samsungwashingmachine(){
       </div>
 
       {/* 2. MAIN CONTENT SECTION */}
-      <section className="py-20 px-4 md:px-8 max-w-6xl mx-auto">
+      <section className="py-20 px-4 md:px-8 max-w-8xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12">
           
           <div className="md:col-span-2 space-y-16">
@@ -179,7 +185,10 @@ export default function samsungwashingmachine(){
 
         </div>
       </section>
+
+      
     </div>
+    <DisclaimerSection/>
         </>
     )
 }
