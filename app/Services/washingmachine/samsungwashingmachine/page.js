@@ -54,7 +54,7 @@ export default function samsungwashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Samsung.png" 
+    src="/brandlogos/Samsung.png" 
     alt="Samsung Logo" 
     className="h-10 w-auto object-contain md:h-15" 
   />
