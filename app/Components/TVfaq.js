@@ -6,22 +6,26 @@
     const [openIndex, setOpenIndex] = useState(0); // Default first one open like the image
 
     const faqData = [
-      {
-        question: "What services does Covai Home Tech offer?",
-        answer: "We offer washing machine repair, AC service, refrigerator repair, and TV repair services across Coimbatore."
-      },
-      {
-        question: "Do you provide doorstep appliance repair service?",
-        answer: "Yes, we provide quick doorstep service with experienced technicians."
-      },
-      {
-        question: "Which areas do you cover in Coimbatore?",
-        answer: "We serve Coimbatore city and nearby surrounding areas."
-      },
-      {
-        question: "Can I book same-day service?",
-        answer: "Yes, same-day service is available based on location and technician availability."
-      },
+        {
+    question: "Do you repair Smart TVs and Android TVs?",
+    answer: "Yes, we repair all Smart TV and Android TV models from major brands."
+  },
+  {
+    question: "Do you replace display panels and backlights?",
+    answer: "Yes, genuine display and backlight replacement support is available."
+  },
+  {
+    question: "Do you service all TV brands?",
+    answer: "Yes, we repair Sony, Samsung, LG, MI, OnePlus, TCL, and more."
+  },
+  {
+    question: "Is warranty available for repairs?",
+    answer: "Yes, selected repairs include warranty support."
+  },
+  {
+    question: "Do you provide same-day service?",
+    answer: "Yes, same-day doorstep service is available based on booking slots."
+  }
     ];
 
     return (

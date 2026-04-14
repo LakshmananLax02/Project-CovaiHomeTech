@@ -6,7 +6,7 @@ import Testimonials from '../Components/HomeTestimonials'
 
 import HomeServicesCard from '../Components/HomeServicesCard'
 
-import Homefaq from '../Components/Homefaq'
+import ACfaq from '../Components/ACfaq'
 
 export const metadata = {
   title: "AC Repair & Service in Coimbatore | Covai Home Tech",
@@ -26,7 +26,7 @@ export default function ACServicePage(){
 
          <HomeServicesCard/>
 
-         <Homefaq/>
+         <TVfaq/>
 
 
 

@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import Link from "next/link";
 
 const serviceData = [
   {
     title: "Washing Machine Services",
-    image: "/images/WMrepairimg.png", // Replace with your image paths
+    image: "/images/WMrepairimg.png",
+    href: "/washing-machine-services",
     points: [
       "Drum not rotating / draining issues",
       "Noise and vibration problems",
@@ -15,6 +17,7 @@ const serviceData = [
   {
     title: "Refrigerator Repair Services",
     image: "/images/Refridgerepairimg.png",
+    href: "/fridge-service-page",
     points: [
       "Cooling & gas refill solutions",
       "Compressor & thermostat replacement",
@@ -25,6 +28,7 @@ const serviceData = [
   {
     title: "Ac repair and service",
     image: "/images/ACrepairimg.png",
+    href: "/ac-service-page",
     points: [
       "Installation & uninstallation",
       "Gas refilling and leakage repair",
@@ -35,6 +39,7 @@ const serviceData = [
   {
     title: "Television (TV) Repair Services",
     image: "/images/TVrepairimg.png",
+    href: "/tv-service-page",
     points: [
       "Display & backlight repair",
       "Sound or signal issues",
@@ -52,41 +57,42 @@ export default function ServicesSection() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest">
-            Services
+            Expert Care
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-4 text-black">Our services</h2>
+          <h2 className="text-3xl md:text-4xl font-black mt-4 text-black">Our Services</h2>
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceData.map((service, index) => (
-            <div key={index} className="bg-[#F8F9FA] rounded-3xl p-5 flex flex-col shadow-2xl border border-slate-100">
+            <div key={index} className="group bg-[#F8F9FA] rounded-[2.5rem] p-5 flex flex-col shadow-xl border border-slate-100 transition-all hover:shadow-2xl">
               
-              {/* Image Container with Arrow Overlay */}
-              <div className="relative h-64 w-full rounded-2xl overflow-hidden mb-6">
+              {/* Entire Image Area is a Link */}
+              <Link href={service.href} className="relative block h-64 w-full rounded-3xl overflow-hidden mb-6">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                {/* Orange Circle Arrow Button */}
-                <div className="absolute top-4 right-4 bg-[#FF6600] p-2.5 rounded-full text-white cursor-pointer hover:scale-110 transition-transform">
-                  <ArrowRight size={24} />
+                
+                {/* Fixed Overlay Arrow: Now correctly references the single service */}
+                <div className="absolute top-4 right-4 bg-[#FF6600] p-2.5 rounded-full text-white shadow-lg z-10 group-hover:bg-black transition-colors">
+                  <ArrowRight size={22} />
                 </div>
-              </div>
+              </Link>
 
               {/* Text Content */}
-              <h3 className="text-xl font-bold text-black mb-6 min-h-[56px] leading-tight">
+              <h3 className="text-xl font-black text-black mb-6 min-h-[56px] leading-tight px-2">
                 {service.title}
               </h3>
 
               {/* Feature Points */}
-              <ul className="space-y-4 mb-8 flex-grow">
+              <ul className="space-y-4 mb-8 flex-grow px-2">
                 {service.points.map((point, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-[#FF6600] flex-shrink-0 mt-0.5" />
-                    <span className="text-[13px] text-slate-700 font-medium leading-snug">
+                    <div className="w-4 h-4 rounded-full bg-[#FF6600] flex-shrink-0 mt-1" />
+                    <span className="text-[13px] text-slate-700 font-bold leading-snug">
                       {point}
                     </span>
                   </li>
@@ -94,9 +100,11 @@ export default function ServicesSection() {
               </ul>
 
               {/* Book Now Button */}
-              <button className="w-full bg-[#003366] text-white font-bold py-4 rounded-2xl hover:bg-[#FF6600] transition-colors tracking-wide">
-                Book Now
-              </button>
+              <Link href="/contact" className="w-full">
+                <button className="w-full bg-[#003366] text-white font-black py-4 rounded-2xl hover:bg-[#FF6600] transition-all transform active:scale-95 tracking-wide">
+                  Book Now
+                </button>
+              </Link>
             </div>
           ))}
         </div>

@@ -6,7 +6,7 @@ import Testimonials from '../Components/HomeTestimonials'
 
 import HomeServicesCard from '../Components/HomeServicesCard'
 
-import Homefaq from '../Components/Homefaq'
+import Fridgefaq from '../Components/Fridgefaq'
 
 export const metadata = {
   title: "Refrigerator Repair Service in Coimbatore | Covai Home Tech",
@@ -26,7 +26,7 @@ export default function FridgeServicePage(){
 
          <HomeServicesCard/>
 
-         <Homefaq/>
+         <Fridgefaq/>
 
 
 

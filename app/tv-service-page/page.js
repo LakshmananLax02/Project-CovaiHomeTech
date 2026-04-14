@@ -6,7 +6,7 @@ import Testimonials from '../Components/HomeTestimonials'
 
 import HomeServicesCard from '../Components/HomeServicesCard'
 
-import Homefaq from '../Components/Homefaq'
+import TVfaq from '../Components/TVfaq'
 
 export const metadata = {
   title: "TV Repair Service in Coimbatore | LED, LCD & Smart TV Repair",
@@ -26,7 +26,7 @@ export default function TVServicePage(){
 
          <HomeServicesCard/>
 
-         <Homefaq/>
+         <TVfaq/>
 
 
 

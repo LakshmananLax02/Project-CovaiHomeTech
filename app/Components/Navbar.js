@@ -166,11 +166,11 @@ export default function Navbar() {
         {/* Desktop Menu Links */}
         <div className="hidden lg:flex items-center gap-8 font-bold text-[15px] text-slate-800">
           <Link href="/" className="hover:text-[#FF5C00] transition-colors">Home</Link>
-          <Link href="/AboutUs" className="hover:text-[#FF5C00] transition-colors">About us</Link>
+          <Link href="/about-us" className="hover:text-[#FF5C00] transition-colors">About us</Link>
           
           {/* Desktop Mega Dropdown */}
           <div className="relative" ref={servicesRef}>
-            <Link href="/OurServices">
+            <Link href="/our-services">
             <button 
               onMouseEnter={() => setIsServicesOpen(true)}
               className="flex items-center gap-1 hover:text-[#FF5C00] transition-colors py-2"
@@ -215,8 +215,8 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/OurWorks" className="hover:text-[#FF5C00] transition-colors">Our works</Link>
-          <Link href="/ContactUs" className="hover:text-[#FF5C00] transition-colors">Contact Us</Link>
+          <Link href="/our-works" className="hover:text-[#FF5C00] transition-colors">Our works</Link>
+          <Link href="/contact-us" className="hover:text-[#FF5C00] transition-colors">Contact Us</Link>
         </div>
 
         {/* Mobile Actions & Trigger */}

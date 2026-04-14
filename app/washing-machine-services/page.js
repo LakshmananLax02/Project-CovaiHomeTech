@@ -6,7 +6,7 @@ import Testimonials from '../Components/HomeTestimonials'
 
 import HomeServicesCard from '../Components/HomeServicesCard'
 
-import Homefaq from '../Components/Homefaq'
+import WashingMachinefaq from '../Components/WashingMachinefaq'
 
 export const metadata = {
   title: "Washing Machine Repair Service in Coimbatore | Covai Home Tech",
@@ -26,7 +26,7 @@ export default function WashingMachineService(){
 
          <HomeServicesCard/>
 
-         <Homefaq/>
+         <WashingMachinefaq/>
 
 
 

@@ -6,7 +6,7 @@ import FeatureCards from "../Components/AboutCards";
 
 import Testimonials from '../Components/HomeTestimonials'
 
-import Homefaq from '../Components/Homefaq'
+import Aboutfaq from '../Components/Aboutfaq'
 import { Home } from "lucide-react";
 
 export const metadata = {
@@ -72,7 +72,7 @@ export default function AboutUs(){
 
     <Testimonials/>
 
-    <Homefaq/>
+    <Aboutfaq/>
 
 
 

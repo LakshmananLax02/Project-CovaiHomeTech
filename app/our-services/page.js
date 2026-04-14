@@ -8,6 +8,8 @@ import Marqueebrands from '../Components/MagueeBrands'
 
 import Testimonials from "../Components/HomeTestimonials"
 
+import OurServicesfaq from '../Components/OurServicesfaq'
+
 import HowWeCanHelp from '../Components/HowWeCanHelp'
 
 
@@ -77,6 +79,8 @@ export default function OurServices(){
             <Marqueebrands/>
 
             <Testimonials/>
+
+            <OurServicesfaq/>
 
             <HowWeCanHelp/>
         

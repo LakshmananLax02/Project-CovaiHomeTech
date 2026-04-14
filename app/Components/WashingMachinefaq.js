@@ -7,21 +7,26 @@
 
     const faqData = [
       {
-        question: "What services does Covai Home Tech offer?",
-        answer: "We offer washing machine repair, AC service, refrigerator repair, and TV repair services across Coimbatore."
-      },
-      {
-        question: "Do you provide doorstep appliance repair service?",
-        answer: "Yes, we provide quick doorstep service with experienced technicians."
-      },
-      {
-        question: "Which areas do you cover in Coimbatore?",
-        answer: "We serve Coimbatore city and nearby surrounding areas."
-      },
-      {
-        question: "Can I book same-day service?",
-        answer: "Yes, same-day service is available based on location and technician availability."
-      },
+    question: "Do you provide same-day service?",
+    answer: "Yes, we offer same-day doorstep support in most areas across Coimbatore depending on technician availability and booking slots."
+  },
+  {
+    question: "Do you repair all brands?",
+    answer: "Yes, we service all major brands including LG, Samsung, IFB, Bosch, Whirlpool, Haier, and more."
+  },
+  {
+    question: "Do you use genuine spare parts?",
+    answer: "Yes, we use high-quality genuine spare parts to ensure long-lasting performance."
+  },
+  {
+    question: "Is service warranty available?",
+    answer: "Yes, selected repairs and spare replacements come with service warranty support."
+  },
+  {
+    question: "Which areas do you cover?",
+    answer: "We provide service across Coimbatore, Pollachi, and surrounding locations."
+  }
+
     ];
 
     return (
