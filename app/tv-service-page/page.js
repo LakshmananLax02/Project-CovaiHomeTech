@@ -1,12 +1,15 @@
 import TVRepairServices from '../Components/TVRepairServices'
 
-import HowWeCanHelp from '../Components/HowWeCanHelp'
+import TVHowCanHelp from '../Components/TVHowCanHelp'
 
-import Testimonials from '../Components/HomeTestimonials'
+import TVTestimonials from '../Components/TVTestimonials'
 
 import HomeServicesCard from '../Components/HomeServicesCard'
 
 import TVfaq from '../Components/TVfaq'
+
+import  DisclaimerSection from '../Components/DisclaimerSection'
+
 
 export const metadata = {
   title: "TV Repair Service in Coimbatore | LED, LCD & Smart TV Repair",
@@ -20,13 +23,15 @@ export default function TVServicePage(){
 
         <TVRepairServices/>
 
-         <HowWeCanHelp/>
+         <TVHowCanHelp/>
 
-         <Testimonials/>
+         <TVTestimonials/>
 
          <HomeServicesCard/>
 
          <TVfaq/>
+
+          <DisclaimerSection/>
 
 
 

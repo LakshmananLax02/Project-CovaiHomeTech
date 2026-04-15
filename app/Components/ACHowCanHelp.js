@@ -6,28 +6,28 @@ import { PhoneCall, Calendar, User, CheckSquare } from 'lucide-react';
 export default function HowWeCanHelp() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const steps = [
-    {
-      icon: <PhoneCall size={24} />,
-      title: "Book Online",
-      description: "Easily choose your preferred service and conveniently schedule it at a time that works best for you through our simple booking."
-    },
-    {
-      icon: <Calendar size={24} />,
-      title: "Customize Plan",
-      description: "Customize your cleaning just the way you like it – choose the service type, schedule, and how often you need it."
-    },
-    {
-      icon: <User size={24} />,
-      title: "Meet Your Cleaner",
-      description: "Meet the professional who'll care for your space – we'll share their name and details before your appointment."
-    },
-    {
-      icon: <CheckSquare size={24} />,
-      title: "Get Sparkling Results",
-      description: "Enjoy a spotless home, cleaned with care. Our pros use eco-friendly products and proven methods for a deep."
-    }
-  ];
+ const steps = [
+  {
+    icon: <PhoneCall size={24} />,
+    title: "Book Online",
+    description: "Choose your preferred time slot and book service easily."
+  },
+  {
+    icon: <Calendar size={24} />,
+    title: "Customize Plan",
+    description: "Select issue type, AC model, and service requirement."
+  },
+  {
+    icon: <User size={24} />,
+    title: "Meet Your Technician",
+    description: "Certified AC technicians arrive on time with tools."
+  },
+  {
+    icon: <CheckSquare size={24} />,
+    title: "Get Cooling Results",
+    description: "Fast repair, cooling test, and service warranty."
+  }
+];
 
   return (
     <section className="py-12 md:py-20 px-8 bg-white overflow-hidden">
@@ -51,7 +51,7 @@ export default function HowWeCanHelp() {
         <div className="relative pt-2 order-first lg:order-last">
           <div className="relative rounded-[30px] md:rounded-[50px] overflow-hidden border-[8px] md:border-[12px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] aspect-square md:aspect-[4/5] lg:h-[550px]">
             <Image 
-              src="/images/howcanhelpimg.png" 
+              src="/images/ACrepairimg.png" 
               alt="Technician repairing washing machine"
               fill
               className="object-cover"

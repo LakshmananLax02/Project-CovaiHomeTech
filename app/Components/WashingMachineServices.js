@@ -10,13 +10,14 @@ const machineTypes = [
 ];
 
 const commonProblems = [
-  "Machine not starting or spinning",
-  "Drum not rotating or over-vibrating",
-  "Water leakage or not draining properly",
-  "Display or PCB (circuit board) issues",
-  "Door lock / lid sensor not working",
-  "Unusual noise during wash cycle",
-  "Complete cleaning and preventive maintenance"
+  "Machine not starting or spinning properly",
+  "Drum not rotating or excessive vibration",
+  "Water leakage or drainage blockage issues",
+  "PCB board and display panel issues",
+  "Door lock or lid sensor problems",
+  "Loud noise during wash cycle",
+  "Motor and belt issues",
+  "Preventive maintenance and internal cleaning"
 ];
 
 export default function WashingMachineDetail() {
@@ -48,11 +49,7 @@ export default function WashingMachineDetail() {
           <div>
             <h2 className="text-2xl font-bold mb-4">Description</h2>
             <p className="text-slate-600 leading-relaxed text-sm">
-              When your washing machine stops working, laundry piles up fast. That's why 
-              Covaihome Tech offers quick and professional washing machine repair services in 
-              Coimbatore, right at your doorstep. Our trained technicians handle every issue — from 
-              noisy spin cycles to water-drain problems — ensuring your appliance runs smoothly 
-              again in no time.
+              When your washing machine stops working, daily household routines can become stressful and time-consuming. At Covai Home Tech, we provide professional washing machine repair services in Coimbatore with quick doorstep support and highly experienced technicians. From minor drainage issues to major motor or PCB faults, our team is trained to diagnose and repair every problem efficiently. We service all major brands and models, ensuring your machine runs smoothly, quietly, and efficiently after every repair. Our focus is on delivering reliable service, affordable pricing, genuine spare parts, and complete customer satisfaction.
             </p>
           </div>
 
@@ -86,9 +83,8 @@ export default function WashingMachineDetail() {
           <div className="border border-slate-100 rounded-3xl p-8 shadow-sm bg-white overflow-hidden">
             <h3 className="text-lg font-bold mb-4">Service area available</h3>
             <p className="text-slate-500 text-xs leading-relaxed mb-6">
-              We serve customers across all major Coimbatore areas — 
-              Peelamedu, RS Puram, Singanallur, Saibaba Colony, 
-              Saravanampatti, Vadavalli, Ganapathy, and more.
+             We serve customers across all major Coimbatore areas — Peelamedu, RS Puram, Singanallur, 
+             Saibaba Colony, Saravanampatti, Vadavalli, Ganapathy, Nearby areas and Pollachi
             </p>
             
             <div className="border-t border-slate-100 pt-6">

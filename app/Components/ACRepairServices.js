@@ -2,21 +2,24 @@ import React from 'react';
 import Image from 'next/image';
 
 const machineTypes = [
-  "Front Load Machines",
-  "Top Load Machines",
-  "Semi-Automatic Models",
-  "Fully-Automatic Models",
-  "Inverter & Smart Washing Machines"
+  "Split AC",
+  "Window AC",
+  "Inverter AC",
+  "Smart AC",
+  "Tower AC"
 ];
 
 const commonProblems = [
-  "Machine not starting or spinning",
-  "Drum not rotating or over-vibrating",
-  "Water leakage or not draining properly",
-  "Display or PCB (circuit board) issues",
-  "Door lock / lid sensor not working",
-  "Unusual noise during wash cycle",
-  "Complete cleaning and preventive maintenance"
+  "AC not cooling properly",
+  "Water leakage from indoor unit",
+  "Gas leakage and gas filling",
+  "Compressor not working",
+  "Fan motor issue",
+  "PCB board issue",
+  "AC not turning on",
+  "Unusual noise or vibration",
+  "Remote sensor issues",
+  "Complete AC cleaning and maintenance"
 ];
 
 export default function ACRepairServices() {
@@ -28,13 +31,13 @@ export default function ACRepairServices() {
         <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase">
           Services
         </span>
-        <h1 className="text-3xl font-bold mt-4">Washing Machine Repair Services</h1>
+        <h1 className="text-3xl font-bold mt-4">AC Repair Services</h1>
       </div>
 
       {/* Main Hero Image */}
       <div className="relative w-full h-[400px] rounded-[2rem] overflow-hidden mb-12 shadow-lg">
         <Image 
-          src="/images/WashMachineimg.png" 
+          src="/images/Whatwedoimg.png" 
           alt="Technician repairing washing machine" 
           fill 
           className="object-cover"
@@ -48,16 +51,13 @@ export default function ACRepairServices() {
           <div>
             <h2 className="text-2xl font-bold mb-4">Description</h2>
             <p className="text-slate-600 leading-relaxed text-sm">
-              When your washing machine stops working, laundry piles up fast. That's why 
-              Covaihome Tech offers quick and professional washing machine repair services in 
-              Coimbatore, right at your doorstep. Our trained technicians handle every issue — from 
-              noisy spin cycles to water-drain problems — ensuring your appliance runs smoothly 
-              again in no time.
+             When your air conditioner stops cooling properly, it can quickly make your home or office uncomfortable, especially during hot summer days. At Covai Home Tech, we provide professional AC repair and maintenance services in Coimbatore with fast doorstep support. Our experienced technicians are trained to service split AC, window AC, inverter AC, and smart air conditioning systems from all major brands. Whether your AC has cooling issues, water leakage, gas leakage, unusual noise, or compressor faults, we provide quick diagnosis and reliable repair solutions 
+             using genuine spare parts. Our goal is to restore efficient cooling performance with affordable pricing and long-lasting service.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-6">We repair all types of washing machines</h2>
+            <h2 className="text-2xl font-bold mb-6">We repair all types of ACs</h2>
             <ul className="space-y-3">
               {machineTypes.map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
@@ -86,9 +86,8 @@ export default function ACRepairServices() {
           <div className="border border-slate-100 rounded-3xl p-8 shadow-sm bg-white overflow-hidden">
             <h3 className="text-lg font-bold mb-4">Service area available</h3>
             <p className="text-slate-500 text-xs leading-relaxed mb-6">
-              We serve customers across all major Coimbatore areas — 
-              Peelamedu, RS Puram, Singanallur, Saibaba Colony, 
-              Saravanampatti, Vadavalli, Ganapathy, and more.
+              We serve customers across all major Coimbatore areas — Peelamedu, RS Puram, Singanallur, Saibaba Colony, Saravanampatti, 
+              Vadavalli, Ganapathy, Nearby areas and Pollachi
             </p>
             
             <div className="border-t border-slate-100 pt-6">

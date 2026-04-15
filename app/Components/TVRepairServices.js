@@ -2,21 +2,24 @@ import React from 'react';
 import Image from 'next/image';
 
 const machineTypes = [
-  "Front Load Machines",
-  "Top Load Machines",
-  "Semi-Automatic Models",
-  "Fully-Automatic Models",
-  "Inverter & Smart Washing Machines"
+  "LED TV",
+  "LCD TV",
+  "Smart TV",
+  "Android TV",
+  "4K UHD TV"
 ];
 
 const commonProblems = [
-  "Machine not starting or spinning",
-  "Drum not rotating or over-vibrating",
-  "Water leakage or not draining properly",
-  "Display or PCB (circuit board) issues",
-  "Door lock / lid sensor not working",
-  "Unusual noise during wash cycle",
-  "Complete cleaning and preventive maintenance"
+  "TV not turning on",
+  "No display / black screen issue",
+  "Screen line and flickering problems",
+  "Backlight failure",
+  "Sound not working",
+  "HDMI and USB port issues",
+  "Motherboard / PCB board faults",
+  "Smart TV software issues",
+  "Wi-Fi connectivity issue",
+  "Remote sensor problems"
 ];
 
 export default function TVRepairServices() {
@@ -28,13 +31,13 @@ export default function TVRepairServices() {
         <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase">
           Services
         </span>
-        <h1 className="text-3xl font-bold mt-4">Washing Machine Repair Services</h1>
+        <h1 className="text-3xl font-bold mt-4">TV Repair Services</h1>
       </div>
 
       {/* Main Hero Image */}
       <div className="relative w-full h-[400px] rounded-[2rem] overflow-hidden mb-12 shadow-lg">
         <Image 
-          src="/images/WashMachineimg.png" 
+          src="/images/TVrepairimg.png" 
           alt="Technician repairing washing machine" 
           fill 
           className="object-cover"
@@ -48,16 +51,13 @@ export default function TVRepairServices() {
           <div>
             <h2 className="text-2xl font-bold mb-4">Description</h2>
             <p className="text-slate-600 leading-relaxed text-sm">
-              When your washing machine stops working, laundry piles up fast. That's why 
-              Covaihome Tech offers quick and professional washing machine repair services in 
-              Coimbatore, right at your doorstep. Our trained technicians handle every issue — from 
-              noisy spin cycles to water-drain problems — ensuring your appliance runs smoothly 
-              again in no time.
+             A faulty television can interrupt your daily entertainment, family time, and important viewing moments. At Covai Home Tech, we provide professional TV repair services in Coimbatore with fast doorstep support and highly experienced technicians. We service all major television brands and models including LED TVs, LCD TVs, Smart TVs, Android TVs, OLED TVs, QLED TVs, and 4K UHD televisions. Whether your TV has no display, sound issues, backlight failure, motherboard faults, HDMI port issues, or software problems, our team offers quick diagnosis and reliable repair solutions using genuine spare parts. We focus on restoring crystal-clear display quality, perfect sound output, 
+             and long-lasting performance at affordable pricing.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-6">We repair all types of washing machines</h2>
+            <h2 className="text-2xl font-bold mb-6">We repair all types of TVs</h2>
             <ul className="space-y-3">
               {machineTypes.map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
@@ -86,9 +86,8 @@ export default function TVRepairServices() {
           <div className="border border-slate-100 rounded-3xl p-8 shadow-sm bg-white overflow-hidden">
             <h3 className="text-lg font-bold mb-4">Service area available</h3>
             <p className="text-slate-500 text-xs leading-relaxed mb-6">
-              We serve customers across all major Coimbatore areas — 
-              Peelamedu, RS Puram, Singanallur, Saibaba Colony, 
-              Saravanampatti, Vadavalli, Ganapathy, and more.
+            We serve customers across all major Coimbatore areas — Peelamedu, RS Puram, Singanallur, Saibaba Colony, 
+            Saravanampatti, Vadavalli, Ganapathy, Nearby areas and Pollachi
             </p>
             
             <div className="border-t border-slate-100 pt-6">

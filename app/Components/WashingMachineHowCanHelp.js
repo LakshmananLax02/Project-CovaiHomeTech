@@ -6,28 +6,28 @@ import { PhoneCall, Calendar, User, CheckSquare } from 'lucide-react';
 export default function HowWeCanHelp() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const steps = [
-    {
-      icon: <PhoneCall size={24} />,
-      title: "Book Online",
-      description: "Easily choose your preferred service and conveniently schedule it at a time that works best for you through our simple booking."
-    },
-    {
-      icon: <Calendar size={24} />,
-      title: "Customize Plan",
-      description: "Customize your cleaning just the way you like it – choose the service type, schedule, and how often you need it."
-    },
-    {
-      icon: <User size={24} />,
-      title: "Meet Your Cleaner",
-      description: "Meet the professional who'll care for your space – we'll share their name and details before your appointment."
-    },
-    {
-      icon: <CheckSquare size={24} />,
-      title: "Get Sparkling Results",
-      description: "Enjoy a spotless home, cleaned with care. Our pros use eco-friendly products and proven methods for a deep."
-    }
-  ];
+const steps = [
+  {
+    icon: <PhoneCall size={24} />,
+    title: "Book Online",
+    description: "Easily schedule your service at your preferred time with simple booking support."
+  },
+  {
+    icon: <Calendar size={24} />,
+    title: "Customize Plan",
+    description: "Choose the type of service based on your appliance issue and urgency."
+  },
+  {
+    icon: <User size={24} />,
+    title: "Meet Your Technician",
+    description: "Our skilled service professionals arrive on time with tools and spare parts."
+  },
+  {
+    icon: <CheckSquare size={24} />,
+    title: "Get Perfect Results",
+    description: "Quick repair, full testing, and warranty-backed service."
+  }
+];
 
   return (
     <section className="py-12 md:py-20 px-8 bg-white overflow-hidden">

@@ -5,40 +5,44 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const reviews = [
-    {
-      name: "Sarah Johnson",
-      image: "/images/TVrepairimg.png",
-      stars: 5,
-      text: "Our apartment has never looked this clean! Covai Home Tech is now a must in our monthly routine. The team is polite, efficient, and always pays attention to the smallest details."
-    },
-    {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-
-        {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-    // Add more reviews here
-  ];
+const reviews = [
+  {
+    name: "Priya S.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Excellent washing machine repair service. The technician arrived on time, identified the issue quickly, and fixed the drainage problem within an hour. Highly professional service."
+  },
+  {
+    name: "Arun K.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Very satisfied with the service quality and pricing. My front-load washing machine is now working perfectly without noise."
+  },
+  {
+    name: "Meena R.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Best doorstep service in Coimbatore. The technician explained the issue clearly and replaced the faulty spare part with a genuine one."
+  },
+  {
+    name: "Karthik V.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Quick response and same-day repair support. Highly recommended for washing machine service."
+  },
+  {
+    name: "Divya P.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Affordable pricing, polite technician, and excellent repair work."
+  },
+  {
+    name: "Saravanan M.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Outstanding customer support and timely service."
+  }
+];
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);

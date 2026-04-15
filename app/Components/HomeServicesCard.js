@@ -3,30 +3,33 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 const services = [
+
+ { 
+    title: "Washing machine repair", 
+    img: "/images/WMrepairimg.png", 
+    href: "/washing-machine-services",
+    points: ["Drum issues", "Noise problems", "Motor & PCB repairs"]
+  },
+ { 
+    title: "Refrigerator repair", 
+    img: "/images/Refridgerepairimg.png", 
+    href: "/fridge-service-page",
+    points: ["Cooling solutions", "Compressor repair", "Gas charging"]
+  },
   { 
     title: "Ac repair & Service", 
     img: "/images/ACrepairimg.png", 
     href: "/ac-service-page",
     points: ["Installation & uninstallation", "Gas refilling", "Cooling issues"] 
   },
-  { 
-    title: "Washing machine repair", 
-    img: "/images/WMrepairimg.png", 
-    href: "/washing-machine-services",
-    points: ["Drum issues", "Noise problems", "Motor & PCB repairs"]
-  },
+ 
   { 
     title: "Tv repair", 
     img: "/images/TVrepairimg.png", 
     href: "/tv-service-page",
     points: ["Display repair", "Sound issues", "Motherboard fixes"]
   },
-  { 
-    title: "Refrigerator repair", 
-    img: "/images/Refridgerepairimg.png", 
-    href: "/fridge-service-page",
-    points: ["Cooling solutions", "Compressor repair", "Gas charging"]
-  },
+ 
 ];
 
 export default function ServiceGrid() {

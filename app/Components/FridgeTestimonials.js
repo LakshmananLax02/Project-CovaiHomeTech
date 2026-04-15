@@ -5,40 +5,44 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const reviews = [
-    {
-      name: "Sarah Johnson",
-      image: "/images/TVrepairimg.png",
-      stars: 5,
-      text: "Our apartment has never looked this clean! Covai Home Tech is now a must in our monthly routine. The team is polite, efficient, and always pays attention to the smallest details."
-    },
-    {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-
-        {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-    // Add more reviews here
-  ];
+const reviews = [
+  {
+    name: "Priyan K.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "My refrigerator stopped cooling suddenly, and Covai Home Tech fixed it the same day. Excellent doorstep service and affordable pricing."
+  },
+  {
+    name: "Deepa M.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "The technician quickly identified the compressor issue and replaced the faulty part with a genuine spare. Very professional service."
+  },
+  {
+    name: "Raja S.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Best refrigerator repair service in Coimbatore. The cool performance is now perfect."
+  },
+  {
+    name: "Mohan R.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Very polite technician and on-time service support. Highly satisfied with the repair quality."
+  },
+  {
+    name: "Sangeetha P.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Water leakage issue was resolved quickly, and the technician explained everything clearly."
+  },
+  {
+    name: "Vimal K.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Highly recommended for fridge gas refill and cooling issue repair."
+  }
+];
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);

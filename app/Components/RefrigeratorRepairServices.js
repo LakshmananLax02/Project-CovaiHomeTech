@@ -2,21 +2,22 @@ import React from 'react';
 import Image from 'next/image';
 
 const machineTypes = [
-  "Front Load Machines",
-  "Top Load Machines",
-  "Semi-Automatic Models",
-  "Fully-Automatic Models",
-  "Inverter & Smart Washing Machines"
+  "Single Door Refrigerator",
+  "Double Door Refrigerator",
+  "Side-by-Side Refrigerator",
+  "French Door Refrigerator",
+  "Inverter Refrigerator",
+  "Smart Refrigerator",
+  "Commercial Refrigerator"
 ];
 
 const commonProblems = [
-  "Machine not starting or spinning",
-  "Drum not rotating or over-vibrating",
-  "Water leakage or not draining properly",
-  "Display or PCB (circuit board) issues",
-  "Door lock / lid sensor not working",
-  "Unusual noise during wash cycle",
-  "Complete cleaning and preventive maintenance"
+  "Refrigerator not cooling properly",
+  "Freezer not freezing",
+  "Excess ice build-up issue",
+  "Water leakage from bottom or back",
+  "Compressor fault or overheating",
+  "Thermostat issue"
 ];
 
 export default function RefrigeratorRepairServices() {
@@ -28,13 +29,13 @@ export default function RefrigeratorRepairServices() {
         <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase">
           Services
         </span>
-        <h1 className="text-3xl font-bold mt-4">Washing Machine Repair Services</h1>
+        <h1 className="text-3xl font-bold mt-4">Refrigerator Repair Services</h1>
       </div>
 
       {/* Main Hero Image */}
       <div className="relative w-full h-[400px] rounded-[2rem] overflow-hidden mb-12 shadow-lg">
         <Image 
-          src="/images/WashMachineimg.png" 
+          src="/images/Refridgerepairimg.png" 
           alt="Technician repairing washing machine" 
           fill 
           className="object-cover"
@@ -48,16 +49,13 @@ export default function RefrigeratorRepairServices() {
           <div>
             <h2 className="text-2xl font-bold mb-4">Description</h2>
             <p className="text-slate-600 leading-relaxed text-sm">
-              When your washing machine stops working, laundry piles up fast. That's why 
-              Covaihome Tech offers quick and professional washing machine repair services in 
-              Coimbatore, right at your doorstep. Our trained technicians handle every issue — from 
-              noisy spin cycles to water-drain problems — ensuring your appliance runs smoothly 
-              again in no time.
+             A refrigerator is one of the most essential appliances in every home and business, and any cooling issue can quickly lead to food spoilage, inconvenience, and unnecessary expense. At Covai Home Tech, we provide professional refrigerator repair services in Coimbatore with quick doorstep support, skilled technicians, and affordable pricing. Our experts are trained to service all leading refrigerator brands and models, including single-door, double-door, side-by-side, French door, inverter, and smart refrigerators.Whether your refrigerator is not cooling properly, the freezer is not freezing, water is leaking, or the compressor is making unusual noise, our team provides fast diagnosis and long-lasting repair solutions. 
+             We use genuine spare parts and advanced diagnostic tools to identify the exact issue and restore your refrigerator’s cooling efficiency. 
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-6">We repair all types of washing machines</h2>
+            <h2 className="text-2xl font-bold mb-6">We repair all types of Refrigerators</h2>
             <ul className="space-y-3">
               {machineTypes.map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
@@ -86,9 +84,8 @@ export default function RefrigeratorRepairServices() {
           <div className="border border-slate-100 rounded-3xl p-8 shadow-sm bg-white overflow-hidden">
             <h3 className="text-lg font-bold mb-4">Service area available</h3>
             <p className="text-slate-500 text-xs leading-relaxed mb-6">
-              We serve customers across all major Coimbatore areas — 
-              Peelamedu, RS Puram, Singanallur, Saibaba Colony, 
-              Saravanampatti, Vadavalli, Ganapathy, and more.
+             We serve customers across all major Coimbatore areas — Peelamedu, RS Puram, Singanallur, 
+             Saibaba Colony, Saravanampatti, Vadavalli, Ganapathy, Nearby areas and Pollachi
             </p>
             
             <div className="border-t border-slate-100 pt-6">

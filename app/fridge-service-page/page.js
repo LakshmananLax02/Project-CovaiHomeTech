@@ -1,12 +1,15 @@
 import RefrigeratorRepairServices from '../Components/RefrigeratorRepairServices'
 
-import HowWeCanHelp from '../Components/HowWeCanHelp'
+import FridgeHowWeCanHelp from '../Components/FridgeHowCanHelp'
 
-import Testimonials from '../Components/HomeTestimonials'
+import FridgeTestimonials from '../Components/FridgeTestimonials'
 
 import HomeServicesCard from '../Components/HomeServicesCard'
 
 import Fridgefaq from '../Components/Fridgefaq'
+
+import  DisclaimerSection from '../Components/DisclaimerSection'
+
 
 export const metadata = {
   title: "Refrigerator Repair Service in Coimbatore | Covai Home Tech",
@@ -20,13 +23,15 @@ export default function FridgeServicePage(){
 
         <RefrigeratorRepairServices/>
 
-         <HowWeCanHelp/>
+         <FridgeHowWeCanHelp/>
 
-         <Testimonials/>
+         <FridgeTestimonials/>
 
          <HomeServicesCard/>
 
          <Fridgefaq/>
+
+          <DisclaimerSection/>
 
 
 

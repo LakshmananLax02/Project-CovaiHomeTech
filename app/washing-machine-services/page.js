@@ -1,12 +1,15 @@
 import WashingMachineServices from '../Components/WashingMachineServices'
 
-import HowWeCanHelp from '../Components/HowWeCanHelp'
+import WashingMachineHowCanHelp from '../Components/WashingMachineHowCanHelp'
 
-import Testimonials from '../Components/HomeTestimonials'
+import WashingMachineTestimonials from '../Components/WashingMachineTestimonials'
 
 import HomeServicesCard from '../Components/HomeServicesCard'
 
 import WashingMachinefaq from '../Components/WashingMachinefaq'
+
+import  DisclaimerSection from '../Components/DisclaimerSection'
+
 
 export const metadata = {
   title: "Washing Machine Repair Service in Coimbatore | Covai Home Tech",
@@ -20,13 +23,15 @@ export default function WashingMachineService(){
 
         <WashingMachineServices/>
 
-         <HowWeCanHelp/>
+         <WashingMachineHowCanHelp/>
 
-         <Testimonials/>
+         <WashingMachineTestimonials/>
 
          <HomeServicesCard/>
 
          <WashingMachinefaq/>
+
+          <DisclaimerSection/>
 
 
 

@@ -1,12 +1,14 @@
 import ACRepairServices from '../Components/ACRepairServices'
 
-import HowWeCanHelp from '../Components/HowWeCanHelp'
+import ACHowWeCanHelp from '../Components/ACHowCanHelp'
 
-import Testimonials from '../Components/HomeTestimonials'
+import ACTestimonials from '../Components/ACTestimonials'
 
 import HomeServicesCard from '../Components/HomeServicesCard'
 
 import ACfaq from '../Components/ACfaq'
+
+import  DisclaimerSection from '../Components/DisclaimerSection'
 
 export const metadata = {
   title: "AC Repair & Service in Coimbatore | Covai Home Tech",
@@ -20,13 +22,15 @@ export default function ACServicePage(){
 
         <ACRepairServices/>
 
-         <HowWeCanHelp/>
+         <ACHowWeCanHelp/>
 
-         <Testimonials/>
+         <ACTestimonials/>
 
          <HomeServicesCard/>
 
-         <TVfaq/>
+         <ACfaq/>
+
+         <DisclaimerSection/>
 
 
 

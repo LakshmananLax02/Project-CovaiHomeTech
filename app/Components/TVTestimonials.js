@@ -5,40 +5,44 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const reviews = [
-    {
-      name: "Sarah Johnson",
-      image: "/images/TVrepairimg.png",
-      stars: 5,
-      text: "Our apartment has never looked this clean! Covai Home Tech is now a must in our monthly routine. The team is polite, efficient, and always pays attention to the smallest details."
-    },
-    {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-
-        {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-    // Add more reviews here
-  ];
+const reviews = [
+  {
+    name: "Arun V.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "My LED TV display issue was fixed perfectly in a single visit. Excellent service support."
+  },
+  {
+    name: "Megha R.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Affordable pricing and professional technician support. Highly satisfied."
+  },
+  {
+    name: "Hari S.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Backlight issue resolved with genuine spare replacement."
+  },
+  {
+    name: "Nisha K.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Smart TV software issue fixed quickly."
+  },
+  {
+    name: "Kavin P.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Very experienced technician and polite customer service."
+  },
+  {
+    name: "Rohit M.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Best TV repair service in Coimbatore."
+  }
+];
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);

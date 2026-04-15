@@ -5,40 +5,44 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const reviews = [
-    {
-      name: "Sarah Johnson",
-      image: "/images/TVrepairimg.png",
-      stars: 5,
-      text: "Our apartment has never looked this clean! Covai Home Tech is now a must in our monthly routine. The team is polite, efficient, and always pays attention to the smallest details."
-    },
-    {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-
-        {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-    // Add more reviews here
-  ];
+ const reviews = [
+  {
+    name: "Ramesh T.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Very quick AC repair service. The cooling issue was fixed the same day."
+  },
+  {
+    name: "Keerthana M.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Professional gas refill service with affordable charges."
+  },
+  {
+    name: "Prakash S.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Technician explained the issue clearly and repaired it perfectly."
+  },
+  {
+    name: "Lavanya P.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Excellent AC cleaning and maintenance service."
+  },
+  {
+    name: "Suresh K.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Best AC service in Coimbatore with quick response."
+  },
+  {
+    name: "Nivetha R.",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Highly recommended for inverter AC repair."
+  }
+];
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);
