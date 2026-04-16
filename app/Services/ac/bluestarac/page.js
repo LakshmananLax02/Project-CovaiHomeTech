@@ -49,14 +49,14 @@ export default function bluestarac(){
 
           {/* BIG IMAGE CONTAINER (At the bottom of the header section) */}
           <div className="mt-16 w-full">
- <div className="relative aspect-[10/11] rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl group">              <img 
-                src="/washingmachine/Blue Star.jpg" 
+ <div className="relative aspect-[14/11] rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl group">              <img 
+                src="/acimages/bluestarac.jpg" 
                 alt="Professional Blue Star Washing Machine Repair Service" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
               
-              <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
+              <div className="absolute bottom-2 left-6 md:bottom-10 md:left-10">
    <div className="bg-[#FF5C00] text-white px-6 py-2 rounded-2xl shadow-xl flex items-center justify-between mb-3 w-full max-w-sm">
   {/* Text stays on the far left */}
   <span className="font-black italic text-xl">Blue Star</span>
@@ -65,7 +65,7 @@ export default function bluestarac(){
   <img 
     src="/washingmachinelogos/Blue Star.png" 
     alt="Blue Star Logo" 
-    className="h-10 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-15" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>

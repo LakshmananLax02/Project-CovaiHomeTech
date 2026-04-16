@@ -1,4 +1,4 @@
-import ComparisonGallery from "../Components/BeforeAftersection"
+import OurVideos from '../Components/OurWorksVideoCard'
 
 
 export const metadata = {
@@ -9,7 +9,7 @@ export default function OurWorks(){
     return(
 
 <>
-<ComparisonGallery/>
+<OurVideos/>
 </>
 
     )

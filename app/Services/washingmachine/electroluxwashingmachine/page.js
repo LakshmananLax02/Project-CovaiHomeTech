@@ -54,7 +54,7 @@ export default function electroluxwashingmachine(){
   <img 
     src="/washingmachinelogos/Electrolux.png" 
     alt="Electrolux Logo" 
-    className="h-10 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-15" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>

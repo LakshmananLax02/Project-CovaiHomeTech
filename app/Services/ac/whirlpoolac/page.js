@@ -49,8 +49,8 @@ export default function whirlpoolacac(){
 
           {/* BIG IMAGE CONTAINER (At the bottom of the header section) */}
           <div className="mt-16 w-full">
- <div className="relative aspect-[10/11] rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl group">              <img 
-                src="/washingmachine/Whirlpool.jpg" 
+ <div className="relative aspect-[12/11] rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl group">              <img 
+                src="/acimages/whirlpoolac.jpg" 
                 alt="Professional Whirlpool Washing Machine Repair Service" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               />
@@ -65,7 +65,7 @@ export default function whirlpoolacac(){
   <img 
     src="/washingmachinelogos/Whirlpool.png" 
     alt="Whirlpool Logo" 
-    className="h-10 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-15" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>

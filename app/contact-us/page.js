@@ -1,5 +1,5 @@
-import ComparisonGallery from "../Components/BeforeAftersection"
-
+import ContactFrom from '../Components/ContactForm'
+import ContactMap from '../Components/ContactMap'
 
 export const metadata = {
   title: "Contact Covai Home Tech | Appliance Repair Service in Coimbatore",
@@ -9,6 +9,8 @@ export default function ContactUs(){
     return(
 
 <>
+<ContactFrom/>
+<ContactMap/>
 
 </>
 

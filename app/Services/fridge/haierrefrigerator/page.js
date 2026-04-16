@@ -48,7 +48,7 @@ export default function haierrefrigerator(){
           {/* BIG IMAGE CONTAINER (At the bottom of the header section) */}
           <div className="mt-16 w-full">
  <div className="relative aspect-[10/11] rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl group">              <img 
-                src="/washingmachine/Haier.jpg" 
+                src="/fridgeimages/haierfridge.jpg" 
                 alt="Professional Haier Refrigerator Repair Service" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               />
@@ -63,7 +63,7 @@ export default function haierrefrigerator(){
   <img 
     src="/washingmachinelogos/Haier.png" 
     alt="Haier Logo" 
-    className="h-10 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-15" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>

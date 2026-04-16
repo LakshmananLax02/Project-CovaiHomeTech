@@ -54,7 +54,7 @@ export default function haierwashingmachine(){
   <img 
     src="/washingmachinelogos/Haier.png" 
     alt="Haier Logo" 
-    className="h-10 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-15" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>

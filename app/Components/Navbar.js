@@ -145,7 +145,7 @@ export default function Navbar() {
         </div>
         <div className="flex items-center gap-6">
           <span className="flex items-center gap-1.5"><MapPin size={13} className="text-[#FF5C00]" /> Coimbatore, TN</span>
-          <span className="flex items-center gap-1.5"><Phone size={13} className="text-[#FF5C00]" /> +91 8800115244</span>
+          <span className="flex items-center gap-1.5"><Phone size={13} className="text-[#FF5C00]" /> +91 7418183318 | 7339642414</span>
           <span className="flex items-center gap-1.5"><Mail size={13} className="text-[#FF5C00]" /> covaihometech@gmail.com</span>
         </div>
       </div>

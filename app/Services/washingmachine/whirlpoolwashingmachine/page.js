@@ -55,7 +55,7 @@ export default function whirlpoolwashingmachine(){
   <img 
     src="/washingmachinelogos/Whirlpool.png" 
     alt="Whirlpool Logo" 
-    className="h-10 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-15" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>
