@@ -9,7 +9,7 @@ const CallToAction = () => {
         <div className="relative z-10 w-full md:w-3/5 text-center md:text-left">
           <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
             Need Home Appliances <br className="hidden md:block" /> 
-            For Rent Or Need To Sale
+            For Repair?
           </h2>
           <p className="text-white/70 text-sm md:text-base mb-8 max-w-lg">
             Old Ac Sale Purchase & AC Rentals, Emergency Rent & Purchase

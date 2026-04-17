@@ -7,27 +7,27 @@ export default function HowWeCanHelp() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const steps = [
-    {
-      icon: <PhoneCall size={24} />,
-      title: "Book Online",
-      description: "Easily choose your preferred service and conveniently schedule it at a time that works best for you through our simple booking."
-    },
-    {
-      icon: <Calendar size={24} />,
-      title: "Customize Plan",
-      description: "Customize your cleaning just the way you like it – choose the service type, schedule, and how often you need it."
-    },
-    {
-      icon: <User size={24} />,
-      title: "Meet Your Cleaner",
-      description: "Meet the professional who'll care for your space – we'll share their name and details before your appointment."
-    },
-    {
-      icon: <CheckSquare size={24} />,
-      title: "Get Sparkling Results",
-      description: "Enjoy a spotless home, cleaned with care. Our pros use eco-friendly products and proven methods for a deep."
-    }
-  ];
+  {
+    icon: <PhoneCall size={24} />,
+    title: "Book Online",
+    description: "Choose the service you need and book it easily online. Pick a date and time that is comfortable for you."
+  },
+  {
+    icon: <Calendar size={24} />,
+    title: "Select Your Service",
+    description: "Choose your appliance type and tell us the problem. You can select the service time as per your need."
+  },
+  {
+    icon: <User size={24} />,
+    title: "Technician Visit",
+    description: "Our expert technician will come to your home on time. They will inspect the appliance and explain the issue clearly."
+  },
+  {
+    icon: <CheckSquare size={24} />,
+    title: "Repair Completed",
+    description: "The problem will be fixed using quality spare parts. We make sure your appliance works properly before leaving."
+  }
+];
 
   return (
     <section className="py-12 md:py-20 px-8 bg-white overflow-hidden">
@@ -40,7 +40,7 @@ export default function HowWeCanHelp() {
           How We Can Help
         </h2>
         <p className="text-slate-500 mt-4 text-sm md:text-base font-medium max-w-xl px-4">
-          Simple, seamless, and stress-free cleaning in 4 easy steps.
+          Fast, easy, and stress-free appliance service in 4 simple steps.
         </p>
       </div>
 

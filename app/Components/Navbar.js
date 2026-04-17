@@ -6,6 +6,7 @@ import {
   Phone, MapPin, Mail, Clock, ChevronDown, 
   Menu, X, WashingMachine, Refrigerator, AirVent, Tv 
 } from "lucide-react";
+import BookingFormModal from '../Components/PopupFormModal'
 
 // --- Sub-components for cleaner code ---
 const SocialIcons = () => (
@@ -16,6 +17,8 @@ const SocialIcons = () => (
     <GoogleIcon />
   </div>
 );
+
+
 
 const FacebookIcon = () => (
   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
@@ -108,6 +111,7 @@ export default function Navbar() {
   const [mobileActiveTab, setMobileActiveTab] = useState("washingmachine");
   const [activeTab, setActiveTab] = useState("washingmachine");
   const servicesRef = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Close desktop dropdown on outside click
   useEffect(() => {
@@ -221,10 +225,15 @@ export default function Navbar() {
 
         {/* Mobile Actions & Trigger */}
         <div className="flex items-center gap-4">
-          <button className="hidden sm:block lg:block bg-[#002D62] text-white px-8 py-3 rounded-full font-bold text-[14px] hover:bg-[#FF5C00] transition-all active:scale-95 shadow-lg shadow-blue-900/10">
+          <button onClick={() => setIsModalOpen(true)} className="hidden sm:block lg:block bg-[#002D62] text-white px-8 py-3 rounded-full font-bold text-[14px] hover:bg-[#FF5C00] transition-all active:scale-95 shadow-lg shadow-blue-900/10">
             Book Now
           </button>
           
+          {/* The Popup Component */}
+      <BookingFormModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
           <button 
             className="lg:hidden p-2 text-slate-800 hover:bg-slate-100 rounded-lg transition-colors"
             onClick={() => setIsMobileOpen(true)}
@@ -261,7 +270,7 @@ export default function Navbar() {
 
           <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-2 font-bold text-slate-800 text-lg">
             <Link href="/" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Home</Link>
-            <Link href="/AboutUs" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">About Us</Link>
+            <Link href="/about-us" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">About Us</Link>
 
             {/* ── Mobile Services Accordion ── */}
             <div className="flex flex-col">
@@ -322,8 +331,8 @@ export default function Navbar() {
             </div>
             {/* ── End Mobile Services Accordion ── */}
 
-            <Link href="/OurWorks" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Our Works</Link>
-            <Link href="/ContactUs" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Contact Us</Link>
+            <Link href="/our-works" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Our Works</Link>
+            <Link href="/contact-us" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Contact Us</Link>
             
             <div className="pt-6 border-t mt-auto">
                <div className="flex flex-col gap-4">
@@ -338,7 +347,7 @@ export default function Navbar() {
           </div>
 
           <div className="p-6 border-t">
-            <button className="w-full bg-[#FF5C00] text-white py-4 rounded-xl font-bold shadow-lg shadow-orange-500/20">
+            <button onClick={() => {setIsModalOpen(true); handleMobileClose()} }  className="w-full bg-[#FF5C00] text-white py-4 rounded-xl font-bold shadow-lg shadow-orange-500/20">
               Book Appointment
             </button>
           </div>

@@ -5,24 +5,28 @@
   const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(0); // Default first one open like the image
 
-    const faqData = [
-      {
-        question: "What services does Covai Home Tech offer?",
-        answer: "We offer washing machine repair, AC service, refrigerator repair, and TV repair services across Coimbatore."
-      },
-      {
-        question: "Do you provide doorstep appliance repair service?",
-        answer: "Yes, we provide quick doorstep service with experienced technicians."
-      },
-      {
-        question: "Which areas do you cover in Coimbatore?",
-        answer: "We serve Coimbatore city and nearby surrounding areas."
-      },
-      {
-        question: "Can I book same-day service?",
-        answer: "Yes, same-day service is available based on location and technician availability."
-      },
-    ];
+   const faqData = [
+  {
+    question: "Do you provide same-day service?",
+    answer: "Yes, we offer same-day doorstep appliance repair services based on technician availability and location."
+  },
+  {
+    question: "Which areas do you serve?",
+    answer: "We provide services across Coimbatore, Pollachi, and nearby surrounding areas."
+  },
+  {
+    question: "Do you repair all major brands?",
+    answer: "Yes, we service leading brands including LG, Samsung, IFB, Bosch, Whirlpool, Sony, and more."
+  },
+  {
+    question: "Are spare parts genuine?",
+    answer: "Yes, we use genuine and high-quality replacement parts for long-lasting performance."
+  },
+  {
+    question: "How can I book a service?",
+    answer: "You can book through phone call, WhatsApp, or directly from the website booking form."
+  }
+];
 
     return (
        <section className="py-5 px-4 md:px-6 lg:px-8 bg-white">        {/* 1. Header Section */}

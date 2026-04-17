@@ -5,40 +5,44 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const reviews = [
-    {
-      name: "Sarah Johnson",
-      image: "/images/TVrepairimg.png",
-      stars: 5,
-      text: "Our apartment has never looked this clean! Covai Home Tech is now a must in our monthly routine. The team is polite, efficient, and always pays attention to the smallest details."
-    },
-    {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-
-        {
-      name: "Michael Chen",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Fast, thorough, and friendly. Highly recommend their deep cleaning service! They even managed to clean tough stains I had given up on. My house feels refreshed."
-    },
-    {
-      name: "Emily Davis",
-      image: "/images/TVrepairimg.png",
-      stars: 4,
-      text: "Love their eco products and how great my house smells after each visit. They are professional, always on time, and my home has never felt more peaceful and organized."
-    },
-    // Add more reviews here
-  ];
+const reviews = [
+  {
+    name: "Priya S. – Coimbatore",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Excellent washing machine repair service. The technician arrived on time and fixed the issue within an hour. Very professional and affordable."
+  },
+  {
+    name: "Arun Kumar – Pollachi",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "My AC was not cooling properly, and Covai Home Tech solved it on the same day. Great service and friendly support team."
+  },
+  {
+    name: "Meena R. – RS Puram",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Best refrigerator repair service I have used. Quick response, genuine spare parts, and reasonable pricing."
+  },
+  {
+    name: "Karthik V. – Peelamedu",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Smart TV display issue was repaired perfectly. The technician explained the issue clearly and completed the work neatly."
+  },
+  {
+    name: "Lakshmi Devi – Saibaba Colony",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Very satisfied with the doorstep service. The staff were polite, professional, and completed the repair quickly."
+  },
+  {
+    name: "Sanjay M. – Pollachi",
+    image: "/images/TVrepairimg.png",
+    stars: 5,
+    text: "Reliable service for all home appliances. I have used them for AC and washing machine repair. Highly recommended."
+  }
+];
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);

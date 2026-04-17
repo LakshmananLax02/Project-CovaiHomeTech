@@ -1,5 +1,7 @@
 import Carousel from './Components/Carousel'
 
+import WhatWeOffer from './Components/HomeWhatWeOffter'
+
 import HomeServicesCard from './Components/HomeServicesCard'
 
 import HomeVideo from './Components/HomeVideo'
@@ -49,6 +51,7 @@ export default function Home() {
   return (
     <>
     <Carousel/>
+    <WhatWeOffer/>
     <HomeServicesCard/>
     <HomeVideo/>
     <MarqueeBrands/>

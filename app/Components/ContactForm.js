@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState } from 'react';
-import { User, Phone, Settings, ShieldCheck, MapPin, Send } from 'lucide-react';
+import { User, Phone, Settings, ShieldCheck, MapPin, Send, Wrench } from 'lucide-react';
+import { sendBookingEmail } from '../Components/actions';
+
 
 const brandsData = {
   "Washing Machine Repair Service": ["LG", "Samsung", "IFB", "Bosch", "Whirlpool", "Haier", "Godrej", "Panasonic", "Onida", "Electrolux", "Videocon"],
@@ -28,11 +30,19 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert("Thank you! Our technician will call you shortly.");
-  };
+   const handleSubmit = async (e) => {
+  e.preventDefault();
+  
+  // Start loading state (optional)
+  const result = await sendBookingEmail(formData);
+
+  if (result.success) {
+    alert("Success! Your booking details have been sent to our team.");
+    
+  } else {
+    alert("Something went wrong. Please try calling us directly.");
+  }
+};
 
   return (
     <section className="py-20 px-6 bg-slate-50">
@@ -52,18 +62,23 @@ export default function ContactForm() {
             </div>
             
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="bg-[#FF5C00] p-2 rounded-lg">
-                  <ShieldCheck size={20} />
-                </div>
-                <span className="text-xs font-bold uppercase tracking-widest">Doorstep Service</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#FF5C00] p-2 rounded-lg">
-                  <MapPin size={20} />
-                </div>
-                <span className="text-xs font-bold uppercase tracking-widest">Coimbatore Wide</span>
-              </div>
+             
+             
+               {/* Service Warranty */}
+  <div className="flex items-center gap-2">
+    <ShieldCheck size={26} className="text-[#FF5C00]" />
+    <span className="text-xs font-bold uppercase tracking-widest">
+      3 Months Service Warranty
+    </span>
+  </div>
+
+  {/* Spare Parts Warranty */}
+  <div className="flex items-center gap-2">
+    <Wrench size={26} className="text-[#FF5C00]" />
+    <span className="text-xs font-bold uppercase tracking-widest">
+      6 Months Spare Parts Warranty
+    </span>
+  </div>
             </div>
           </div>
 
@@ -154,7 +169,6 @@ export default function ContactForm() {
                   <MapPin className="text-slate-300 mr-3 mt-1" size={18} />
                   <textarea 
                     name="address"
-                    required
                     rows="2"
                     placeholder="Enter your street name, area, and landmark in Coimbatore"
                     className="w-full outline-none text-slate-700 font-bold placeholder:text-slate-200 resize-none"
@@ -168,7 +182,7 @@ export default function ContactForm() {
                 type="submit"
                 className="w-full bg-[#FF5C00] text-white font-black py-5 rounded-2xl flex items-center justify-center gap-3 hover:bg-slate-900 transition-all shadow-xl active:scale-95 group"
               >
-                <span>SEND SERVICE REQUEST</span>
+                <span>BOOK NOW</span>
                 <Send size={18} className="group-hover:translate-x-1 transition-transform" />
               </button>
             </form>
