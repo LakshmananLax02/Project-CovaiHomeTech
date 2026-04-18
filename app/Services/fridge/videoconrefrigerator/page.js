@@ -62,7 +62,7 @@ export default function videoconrefrigerator(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Videocon.png" 
+    src="/brandlogos/videocon.png" 
     alt="Videocon Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

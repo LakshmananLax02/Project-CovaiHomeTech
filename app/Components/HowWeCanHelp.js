@@ -30,13 +30,13 @@ export default function HowWeCanHelp() {
 ];
 
   return (
-    <section className="py-12 md:py-20 px-8 bg-white overflow-hidden">
+    <section className="py-12 md:py-20 px-12 bg-white overflow-hidden">
       {/* 1. Header Section */}
       <div className="text-center mb-12 md:mb-16 flex flex-col items-center">
         <span className="bg-[#FF5C00] text-white text-[10px] font-black px-5 py-1.5 rounded-full uppercase tracking-[0.2em] shadow-lg shadow-orange-500/20">
           How It Works
         </span>
-        <h2 className="text-3xl md:text-5xl font-black mt-6 text-slate-900 tracking-tight px-2">
+        <h2 className="text-3xl md:text-5xl font-bold mt-6 text-slate-900 tracking-tight px-2">
           How We Can Help
         </h2>
         <p className="text-slate-500 mt-4 text-sm md:text-base font-medium max-w-xl px-4">

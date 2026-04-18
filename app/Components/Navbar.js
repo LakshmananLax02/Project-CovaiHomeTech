@@ -155,7 +155,7 @@ export default function Navbar() {
       </div>
 
       {/* 2. MAIN NAVIGATION */}
-      <nav className="flex justify-between items-center px-6 lg:px-24 py-4 relative bg-white">
+      <nav className="flex justify-between items-center px-4 lg:px-6 py-4 relative bg-white">
         <Link href="/" className="flex items-center">
           <Image 
             src="/images/logo.png" 
@@ -168,7 +168,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu Links */}
-        <div className="hidden lg:flex items-center gap-8 font-bold text-[15px] text-slate-800">
+        <div className="hidden lg:flex items-center gap-16  text-[20px] text-slate-800">
           <Link href="/" className="hover:text-[#FF5C00] transition-colors">Home</Link>
           <Link href="/about-us" className="hover:text-[#FF5C00] transition-colors">About us</Link>
           

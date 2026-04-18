@@ -51,7 +51,7 @@ const serviceData = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-16 px-6 lg:px-24 bg-white">
+    <section className="py-16 px-2 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
@@ -100,7 +100,7 @@ export default function ServicesSection() {
               </ul>
 
               {/* Book Now Button */}
-              <Link href="/contact" className="w-full">
+              <Link href="/contact-us" className="w-full">
                 <button className="w-full bg-[#003366] text-white font-black py-4 rounded-2xl hover:bg-[#FF6600] transition-all transform active:scale-95 tracking-wide">
                   Book Now
                 </button>

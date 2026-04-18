@@ -62,7 +62,7 @@ export default function carrierac(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Carrier.png" 
+    src="/brandlogos/carrier.jpg" 
     alt="Carrier Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

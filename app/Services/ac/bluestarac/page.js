@@ -63,7 +63,7 @@ export default function bluestarac(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Blue Star.png" 
+    src="/brandlogos/bluestar.png" 
     alt="Blue Star Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

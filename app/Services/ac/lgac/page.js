@@ -62,7 +62,7 @@ export default function lgac(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/LG.png" 
+    src="/brandlogos/lg.png" 
     alt="LG Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

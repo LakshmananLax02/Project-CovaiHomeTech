@@ -8,8 +8,8 @@ export default function FindUsSection() {
     <section className="py-20 px-6 bg-white">
       {/* Section Heading */}
       <div className="max-w-7xl mx-auto text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-black text-[#001529] mb-4 uppercase italic tracking-tight">
-          Find us on <span className="text-[#008cff]">google maps</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 uppercase tracking-tight">
+          Find us on <span className="text-orange-500">google maps</span>
         </h2>
         <div className="w-24 h-1.5 bg-[#008cff] mx-auto rounded-full"></div>
       </div>
@@ -51,7 +51,7 @@ export default function FindUsSection() {
             {/* Call Us Button */}
             <a 
               href="tel:+917418183318" 
-              className="flex items-center justify-center gap-3 bg-[#008cff] hover:bg-[#0070cc] text-white py-5 rounded-[1.2rem] font-bold text-lg shadow-[0_10px_25px_-5px_rgba(0,140,255,0.4)] transition-all hover:-translate-y-1 active:scale-[0.98]"
+              className="flex items-center justify-center gap-3 bg-[#002D62] hover:bg-orange-500 text-white py-5 rounded-[1.2rem] font-bold text-lg shadow-[0_10px_25px_-5px_rgba(0,140,255,0.4)] transition-all hover:-translate-y-1 active:scale-[0.98]"
             >
               <Phone size={22} fill="white" className="text-white" />
               Call us now

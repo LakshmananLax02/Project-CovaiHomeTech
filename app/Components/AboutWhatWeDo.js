@@ -9,7 +9,7 @@ const stats = [
 
 export default function WhatWeDo() {
   return (
-    <section className="py-16 px-6 lg:px-24 bg-white">
+    <section className="py-16 px-6 lg:px-8 bg-white">
       <div className="max-w-9xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         
         {/* Left Side: Image Container */}

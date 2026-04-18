@@ -53,7 +53,7 @@ export default function onidawashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Onida.png" 
+    src="/brandlogos/onida.png" 
     alt="Onida Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

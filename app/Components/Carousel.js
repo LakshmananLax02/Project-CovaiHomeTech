@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 h-full relative z-20 flex flex-col md:grid md:grid-cols-2 items-center">
         
         {/* Left Column: Text Content */}
-        <div className="flex flex-col z-30 pt-20 md:pt-0 md:pr-12 md:pb-24 text-left">
+        <div className="flex pr-30 flex-col z-30 pt-20 md:pt-0 md:pr-12 md:pb-24 text-left">
           <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
             Fast & Reliable Appliance Repair in <span className="text-orange-500">Coimbatore</span>
           </h1>
@@ -28,7 +28,7 @@ export default function HeroSection() {
           </p>
           
           <div>
-            <button className="px-10 py-4 bg-blue-600 text-white rounded-3xl text-lg font-semibold hover:bg-orange-500 transition duration-150 transform hover:scale-[1.02] shadow-xl">
+            <button className="px-10 py-4 bg-[#002D62] text-white rounded-3xl text-lg font-semibold hover:bg-orange-500 transition duration-150 transform hover:scale-[1.02] shadow-xl">
               Enquire Now
             </button>
           </div>

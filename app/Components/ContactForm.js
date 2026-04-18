@@ -180,7 +180,7 @@ export default function ContactForm() {
               {/* Submit */}
               <button 
                 type="submit"
-                className="w-full bg-[#FF5C00] text-white font-black py-5 rounded-2xl flex items-center justify-center gap-3 hover:bg-slate-900 transition-all shadow-xl active:scale-95 group"
+                className="w-full bg-[#002D62] text-white font-black py-5 rounded-2xl flex items-center justify-center gap-3 hover:bg-orange-500 transition-all shadow-xl active:scale-95 group"
               >
                 <span>BOOK NOW</span>
                 <Send size={18} className="group-hover:translate-x-1 transition-transform" />

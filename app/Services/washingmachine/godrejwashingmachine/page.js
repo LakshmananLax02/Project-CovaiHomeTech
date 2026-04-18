@@ -53,7 +53,7 @@ export default function godrejwashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Godrej.png" 
+    src="/brandlogos/godrej.png" 
     alt="Godrej Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

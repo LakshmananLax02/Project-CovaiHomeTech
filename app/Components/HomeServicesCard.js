@@ -40,11 +40,11 @@ export default function ServiceGrid() {
         <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest">
           Services
         </span>
-        <h2 className="text-4xl font-bold mt-3 text-[#003366]">Our services</h2>
+        <h2 className="text-4xl font-bold mt-3 text-black">Our services</h2>
       </div>
 
       {/* The Grid - full width, no container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-7">
         {services.map((service, index) => (
           <div 
             key={index} 

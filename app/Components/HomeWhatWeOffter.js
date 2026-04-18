@@ -36,9 +36,7 @@ export default function WhatWeOffer() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-[#001529] mb-4 uppercase italic">
-            What We <span className="text-orange-500">Offer</span>
-          </h2>
+          <h2 className="text-4xl font-bold mt-3 text-black">What we offer</h2>
           <div className="w-20 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
           {/* <p className="mt-6 text-slate-500 font-medium max-w-2xl mx-auto">
             We provide reliable and high-quality repair services for all your home appliances in Coimbatore.

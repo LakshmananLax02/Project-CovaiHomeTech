@@ -53,7 +53,7 @@ export default function panasonicwashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Panasonic.png" 
+    src="/brandlogos/panasonic.png" 
     alt="Panasonic Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

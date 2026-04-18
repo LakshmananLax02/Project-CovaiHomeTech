@@ -52,7 +52,7 @@ export default function haierwashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Haier.png" 
+    src="/brandlogos/haier.png" 
     alt="Haier Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

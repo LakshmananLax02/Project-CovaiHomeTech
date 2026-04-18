@@ -57,7 +57,7 @@ export default function lloydac(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Lloyd.png" 
+    src="/brandlogos/lloyd.png" 
     alt="Lloyd Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />
@@ -221,7 +221,7 @@ We ensure quick diagnosis, affordable service charges, and genuine spare parts.
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Lloyd.png" 
+    src="/brandlogos/lloyd.png" 
     alt="Lloyd Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

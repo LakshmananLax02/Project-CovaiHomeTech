@@ -52,7 +52,7 @@ export default function electroluxwashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Electrolux.png" 
+    src="/brandlogos/electrolux.png" 
     alt="Electrolux Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

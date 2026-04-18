@@ -34,9 +34,9 @@ export default function OurWorksGallery() {
             <span className="bg-orange-600 text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-[0.3em]">
               Proven Results
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-4 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 leading-tight">
               See Our Technicians <br />
-              <span className="text-orange-600 italic">In Action</span>
+              <span className="text-orange-600">In Action</span>
             </h2>
           </div>
           <p className="text-slate-500 font-medium md:max-w-xs border-l-2 border-slate-200 pl-4">

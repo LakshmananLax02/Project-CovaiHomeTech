@@ -63,7 +63,7 @@ export default function samsungac(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Samsung.png" 
+    src="/brandlogos/samsung.png" 
     alt="Samsung Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

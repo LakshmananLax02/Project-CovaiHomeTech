@@ -34,10 +34,10 @@ export default function AboutSection() {
   };
 
   return (
-    <section className="bg-white py-8 px-4">
+    <section className="bg-white py-8 px-7">
 
       {/* 1. Header Content */}
-      <div className="flex flex-col md:flex-row justify-between items-start mb-5 gap-8">
+      <div className="flex flex-col md:flex-row justify-between items-start mb-5 gap-8">  
         <div className="max-w-xl">
           <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
             About Us

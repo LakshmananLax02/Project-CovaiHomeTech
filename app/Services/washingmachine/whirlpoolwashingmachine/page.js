@@ -53,7 +53,7 @@ export default function whirlpoolwashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Whirlpool.png" 
+    src="/brandlogos/whirlpool.png" 
     alt="Whirlpool Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

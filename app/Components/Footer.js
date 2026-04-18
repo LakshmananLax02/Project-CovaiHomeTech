@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Custom SVG components for stability
 const YoutubeIcon = ({ className }) => (
@@ -49,26 +50,66 @@ export default function Footer() {
 
         {/* 2. Content Grid - Reduced bottom margin from mb-20 to mb-10 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-8 mb-10">
-          <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/90 border-l-2 border-orange-500/70 pl-4">Services</h3>
-            <ul className="space-y-3 text-sm font-medium text-white/60">
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">Washing machine repair</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">Ac repair and maintenance</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">Tv repair</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">Refrigerator repair</li>
-            </ul>
-          </div>
+      <div>
+  <h3 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/90 border-l-2 border-orange-500/70 pl-4">
+    Services
+  </h3>
+  <ul className="space-y-3 text-sm font-medium text-white/60">
+    <li>
+      <Link href="/washing-machine-services" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Washing machine repair
+      </Link>
+    </li>
+    <li>
+      <Link href="/ac-service-page" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Ac repair and maintenance
+      </Link>
+    </li>
+    <li>
+      <Link href="/tv-service-page" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Tv repair
+      </Link>
+    </li>
+    <li>
+      <Link href="/fridge-service-page" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Refrigerator repair
+      </Link>
+    </li>
+  </ul>
+</div>
 
-          <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/90 border-l-2 border-orange-500/70 pl-4">Quick Links</h3>
-            <ul className="space-y-3 text-sm font-medium text-white/60">
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">Home</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">About us</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">Our works</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">Rent and purchase</li>
-              <li className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1">Contact us</li>
-            </ul>
-          </div>
+<div>
+  <h3 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/90 border-l-2 border-orange-500/70 pl-4">
+    Quick Links
+  </h3>
+  <ul className="space-y-3 text-sm font-medium text-white/60">
+    <li>
+      <Link href="/" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link href="/about" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        About us
+      </Link>
+    </li>
+    <li>
+      <Link href="/works" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Our works
+      </Link>
+    </li>
+    <li>
+      <Link href="/rent-purchase" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Rent and purchase
+      </Link>
+    </li>
+    <li>
+      <Link href="/contact" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Contact us
+      </Link>
+    </li>
+  </ul>
+</div>
 
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/90 border-l-2 border-orange-500/70 pl-4">Address</h3>
@@ -81,7 +122,9 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/90 border-l-2 border-orange-500/70 pl-4">Contact Us</h3>
             <div className="mb-4">
               <p className="text-orange-500 text-[10px] font-black uppercase tracking-widest mb-1">Primary Line</p>
-              <p className="text-2xl font-black tracking-tight text-white">02 (650) 365 2560</p>
+              <p className="text-2xl font-black tracking-tight text-white">+91 7418183318</p><br></br>
+              <p className="text-2xl font-black tracking-tight text-white">+91 7339642414</p>
+
             </div>
             
             <div>

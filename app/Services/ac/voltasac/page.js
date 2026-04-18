@@ -63,7 +63,7 @@ export default function voltasac(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Voltas.png" 
+    src="/brandlogos/voltas.png" 
     alt="Voltas Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

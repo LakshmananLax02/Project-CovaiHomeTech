@@ -61,7 +61,7 @@ export default function hitachirefrigerator(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Hitachi.png" 
+    src="/brandlogos/hitachi.png" 
     alt="Hitachi Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

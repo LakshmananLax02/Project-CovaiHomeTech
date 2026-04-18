@@ -53,9 +53,9 @@ export default function boschwashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Bosch.png" 
+    src="/brandlogos/bosch.png" 
     alt="Bosch Logo" 
-    className="h-5 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-7" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>

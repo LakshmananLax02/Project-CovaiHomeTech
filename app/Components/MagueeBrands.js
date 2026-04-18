@@ -10,7 +10,7 @@ const BrandsService = () => {
         <span className="bg-[#FF5C00] text-white text-[10px] font-black px-5 py-1.5 rounded-full uppercase tracking-[0.2em] shadow-lg shadow-orange-500/20">
           Brands
         </span>
-        <h2 className="text-4xl md:text-5xl font-black mt-6 text-slate-900 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold mt-6 text-slate-900 tracking-tight">
           Brands We Service
         </h2>
       </div>

@@ -51,7 +51,7 @@ export default function ifbwashingmachine(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/IFB.png" 
+    src="/brandlogos/ifb.png" 
     alt="IFB Logo" 
     className="h-5 w-auto object-contain md:h-15" 
   />

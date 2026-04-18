@@ -62,9 +62,9 @@ export default function kelvinatorrefrigerator(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/Kelvinator.png" 
+    src="/brandlogos/kelvinator.png" 
     alt="Kelvinator Logo" 
-    className="h-5 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-5" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>

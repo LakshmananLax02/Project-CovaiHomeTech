@@ -26,11 +26,11 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="relative w-full py-20 px-6 bg-gradient-to-r from-[#3d2315] via-[#1a2533] to-[#0a1e33] text-white overflow-hidden rounded-3xl">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<section className="relative mx-4 md:mx-8 my-10 py-16 md:py-24 bg-gradient-to-r from-[#3d2315] via-[#1a2533] to-[#0a1e33] text-white overflow-hidden rounded-[1rem]">      
+      <div className="container  mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         {/* Left Side: Heading Content */}
-        <div className="max-w-md">
+        <div className="max-w-md p-4">
           <span className="bg-orange-600 text-white text-[10px] uppercase font-bold px-3 py-1 rounded-full tracking-widest">
             Why Choose Us
           </span>
@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Right Side: Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+        <div className="grid grid-cols-1 px-5 md:grid-cols-2 gap-x-8 gap-y-12">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col gap-4">
               <div className="mb-2">

@@ -61,9 +61,9 @@ export default function ogeneralac(){
 
   {/* Logo stays on the far right */}
   <img 
-    src="/washingmachinelogos/O General.png" 
+    src="/brandlogos/ogeneral.png" 
     alt="O General Logo" 
-    className="h-5 w-auto object-contain md:h-15" 
+    className="h-5 w-auto object-contain md:h-8" 
   />
 </div>
                 <p className="text-white font-bold text-sm md:text-lg">Specialized Doorstep Support in Coimbatore</p>
