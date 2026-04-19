@@ -40,7 +40,7 @@ export default function FindUsSection() {
 
           <p className="text-slate-600 text-[17px] font-medium leading-relaxed mb-10">
             28B, Nallimarathottam,<br/> Moogambikai Nagar,<br />
-            Ganapathy, Coimbatore - 641 006.
+            Ganapathy, <br/>Coimbatore - 641 006.
           </p>
 
           <h4 className="text-[22px] font-black text-[#001529] mb-6">
