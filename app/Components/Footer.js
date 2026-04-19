@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full text-white overflow-hidden">
       {/* Reduced overall top padding from pt-16 to pt-10 */}
-      <div className="bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] pt-10 pb-8 px-6 md:px-12 lg:px-6">
+      <div className="bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] pt-10 pb-8 px-6 md:px-12 lg:px-8">
         
         {/* 1. Header - Reduced bottom margin from mb-16 to mb-8 */}
         <div className="mb-8">
@@ -145,12 +145,12 @@ export default function Footer() {
 
         {/* 3. Bottom Bar - Tightened padding */}
         <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] font-bold">
-          <p className="opacity-50 uppercase tracking-[0.2em]">
+          <p className=" uppercase tracking-[0.2em]">
             Copyright © 2026 <span className="text-orange-500">Covaihome tech</span>. All Rights Reserved.
           </p>
-          <div className="flex gap-2 opacity-50 uppercase tracking-[0.2em]">
+          <div className="flex gap-2 uppercase tracking-[0.2em]">
             <span>Developed by</span>
-            <span className="text-orange-500">Wexoraa infotech</span>
+           <Link href='https://wexoraa.com/'> <span className="text-orange-500">Wexoraa infotech</span></Link>
           </div>
         </div>
       </div>

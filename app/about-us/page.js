@@ -21,14 +21,14 @@ export default function AboutUs(){
 
 <section className="relative w-full min-h-[500px] md:h-[500px] flex items-center overflow-hidden bg-black">
   {/* 1. Background Image Layer (The subtle background) */}
-  <div className="absolute inset-0 z-0">
-    <Image
+  <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62]">
+    {/* <Image
       src="/images/carouselmecimg.png" 
       alt="Background"
       fill
       className="object-cover object-center opacity-80 md:opacity-100"
       priority
-    />
+    /> */}
     {/* Deep gradient to ensure text is always readable */}
     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/40 md:bg-gradient-to-r md:from-black md:via-black/50 md:to-transparent" />
   </div>
