@@ -155,7 +155,7 @@ We provide Panasonic AC repair services across Coimbatore and nearby areas.     
 
           {/* Sidebar: Why Choose & CTA */}
           <aside className="space-y-8">
-            <div className="bg-[#002D62] text-white p-10 rounded-[3rem] shadow-2xl sticky top-24">
+            <div className="bg-[#002D62] text-white p-10 rounded-[1rem] shadow-2xl sticky top-24">
               <h3 className="text-2xl font-black mb-8 text-orange-400 leading-tight">
                 Why Choose <br />Covai Home Tech
               </h3>

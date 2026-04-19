@@ -133,11 +133,54 @@ export default function Footer() {
             <div>
               <p className="text-[10px] font-bold mb-3 text-white/50 uppercase tracking-widest">Connect With Us</p>
               <div className="flex gap-5">
-                <YoutubeIcon className="w-5 h-5 cursor-pointer hover:text-orange-500 transition-all hover:-translate-y-1" />
-                <FacebookIcon className="w-5 h-5 cursor-pointer hover:text-orange-500 transition-all hover:-translate-y-1" />
-                <XIcon className="w-5 h-5 cursor-pointer hover:text-orange-500 transition-all hover:-translate-y-1" />
-                <InstagramIcon className="w-5 h-5 cursor-pointer hover:text-orange-500 transition-all hover:-translate-y-1" />
-                <LinkedinIcon className="w-5 h-5 cursor-pointer hover:text-orange-500 transition-all hover:-translate-y-1" />
+               <a 
+    href="https://youtube.com/@covaihometech" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="YouTube"
+  >
+    <YoutubeIcon className="w-5 h-5 cursor-pointer hover:text-[#FF5C00] transition-all hover:-translate-y-1" />
+  </a>
+
+  {/* Facebook */}
+  <a 
+    href="hhttps://www.facebook.com/share/1B1VjtpwTG/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+  >
+    <FacebookIcon className="w-5 h-5 cursor-pointer hover:text-[#FF5C00] transition-all hover:-translate-y-1" />
+  </a>
+
+  {/* X (Twitter) */}
+  <a 
+    href="https://x.com/covaihometech" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Twitter"
+  >
+    <XIcon className="w-5 h-5 cursor-pointer hover:text-[#FF5C00] transition-all hover:-translate-y-1" />
+  </a>
+
+  {/* Instagram */}
+  <a 
+    href="https://www.instagram.com/covaihometech?igsh=MWswZDd1b3JzcDN6Zw==" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <InstagramIcon className="w-5 h-5 cursor-pointer hover:text-[#FF5C00] transition-all hover:-translate-y-1" />
+  </a>
+
+  {/* LinkedIn */}
+  <a 
+    href="https://linkedin.com/company/covaihometech" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <LinkedinIcon className="w-5 h-5 cursor-pointer hover:text-[#FF5C00] transition-all hover:-translate-y-1" />
+  </a>
               </div>
             </div>
           </div>

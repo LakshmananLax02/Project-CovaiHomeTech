@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
             Why Choose Us
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-6 mb-6 leading-[1.1]">
-            Why Covaihome tech Is the Right Choice for Quality
+            Why CovaiHomeTech Is the Right Choice for Quality
           </h2>
           <p className="text-slate-300 text-lg mb-10 leading-relaxed">
             Discover a range of services designed to bring comfort
