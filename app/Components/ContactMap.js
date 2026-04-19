@@ -32,15 +32,15 @@ export default function FindUsSection() {
         </div>
 
         {/* Right Side: Contact Card */}
-        <div className="w-full lg:w-1/3 bg-white p-8 md:p-10 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.06)] border border-slate-100">
+        <div className="w-full lg:w-1/3 bg-gray-200 p-8 md:p-10 rounded-[1rem] shadow-[20px_20px_50px_rgba(0,0,0,0.06)] border border-slate-100">
           
           <h3 className="text-[32px] md:text-[36px] font-black text-[#001529] leading-tight mb-4">
-            Covaihome Tech
+            CovaiHomeTech
           </h3>
 
           <p className="text-slate-600 text-[17px] font-medium leading-relaxed mb-10">
             28B, Nallimarathottam,<br/> Moogambikai Nagar,<br />
-            Ganapathy, Coimbatore - 641006.
+            Ganapathy, Coimbatore - 641 006.
           </p>
 
           <h4 className="text-[22px] font-black text-[#001529] mb-6">
@@ -51,7 +51,7 @@ export default function FindUsSection() {
             {/* Call Us Button */}
             <a 
               href="tel:+917418183318" 
-              className="flex items-center justify-center gap-3 bg-[#002D62] hover:bg-orange-500 text-white py-5 rounded-[1.2rem] font-bold text-lg shadow-[0_10px_25px_-5px_rgba(0,140,255,0.4)] transition-all hover:-translate-y-1 active:scale-[0.98]"
+              className="flex items-center justify-center gap-3 bg-[#002D62] hover:bg-orange-500 text-white py-5 rounded-[1rem] font-bold text-lg shadow-[0_10px_25px_-5px_rgba(0,140,255,0.4)] transition-all hover:-translate-y-1 active:scale-[0.98]"
             >
               <Phone size={22} fill="white" className="text-white" />
               Call us now
