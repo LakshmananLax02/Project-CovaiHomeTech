@@ -15,9 +15,10 @@ const CallToAction = () => {
             Old Ac Sale Purchase & AC Rentals, Emergency Rent & Purchase
           </p>
           
-          <button className="bg-[#002d62] hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-xl active:scale-95">
+          <a href="tel:+917418183318"><button className="bg-[#002d62] hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-xl active:scale-95">
             Call us now
           </button>
+          </a>
         </div>
 
     {/* Reason: Separating the image from the overflow-hidden container allows the 'pop-out' effect while keeping the background rounded. */}

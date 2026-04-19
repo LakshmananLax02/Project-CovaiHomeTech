@@ -1,4 +1,5 @@
 import DisclaimerSection from "../../../Components/DisclaimerSection";
+import Link from "next/link";
 
 export const metadata = {
   title: "IFB Washing Machine Repair in Coimbatore | Covai Home Tech",
@@ -173,9 +174,10 @@ export default function ifbwashingmachine(){
                 <p className="text-sm text-blue-200 mb-8 font-medium italic">
                   Need fast and reliable IFB washing machine service in Coimbatore?
                 </p>
-                <button className="w-full bg-[#FF5C00] hover:bg-orange-500 text-white font-black py-5 rounded-2xl transition-all shadow-xl active:scale-95 text-lg">
+                 <Link href="/contact-us"> <button className="w-full bg-[#FF5C00] hover:bg-orange-500 text-white font-black py-5 rounded-2xl transition-all shadow-xl active:scale-95 text-lg">
                   Book Service Today
-                </button>
+                </button></Link>
+
               </div>
             </div>
           </aside>
