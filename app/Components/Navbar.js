@@ -158,7 +158,7 @@ export default function Navbar() {
       <nav className="flex justify-between items-center px-4 lg:px-6 py-4 relative bg-white">
         <Link href="/" className="flex items-center">
           <Image 
-            src="/images/logo.png" 
+            src="/images/Logo.png" 
             alt="Covai Home Tech Logo" 
             width={70} 
             height={35} 
