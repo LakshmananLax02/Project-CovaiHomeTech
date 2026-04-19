@@ -34,7 +34,7 @@ export default function TVRepairServices() {
       </div>
 
       {/* Main Hero Image */}
-      <div className="relative w-full h-[400px] rounded-[2rem] overflow-hidden mb-12 shadow-lg">
+      <div className="relative w-full h-[400px] rounded-[1rem] overflow-hidden mb-12 shadow-lg">
         <Image 
           src="/images/TVrepairimg.png" 
           alt="Technician repairing washing machine" 

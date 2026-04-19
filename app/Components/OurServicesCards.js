@@ -65,10 +65,10 @@ export default function ServicesSection() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceData.map((service, index) => (
-            <div key={index} className="group bg-[#F8F9FA] rounded-[2.5rem] p-5 flex flex-col shadow-xl border border-slate-100 transition-all hover:shadow-2xl">
+            <div key={index} className="group bg-[#F8F9FA] rounded-[1rem] p-5 flex flex-col shadow-4xl border border-slate-100 transition-all hover:shadow-2xl">
               
               {/* Entire Image Area is a Link */}
-              <Link href={service.href} className="relative block h-64 w-full rounded-3xl overflow-hidden mb-6">
+              <Link href={service.href} className="relative block h-64 w-full rounded-xl overflow-hidden mb-6">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -77,7 +77,7 @@ export default function ServicesSection() {
                 />
                 
                 {/* Fixed Overlay Arrow: Now correctly references the single service */}
-                <div className="absolute top-4 right-4 bg-[#FF6600] p-2.5 rounded-full text-white shadow-lg z-10 group-hover:bg-black transition-colors">
+                <div className="absolute top-4 right-4 bg-[#FF6600] p-2.5 rounded-full text-white shadow-lg hover:bg-[#e65c00] transition-all hover:scale-110 active:scale-95">
                   <ArrowRight size={22} />
                 </div>
               </Link>

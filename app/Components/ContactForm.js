@@ -108,13 +108,13 @@ export default function ContactForm() {
       <div className="group">
         <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Full Name</label>
         <div className="flex items-center border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
-          <User className="text-white/40 mr-3" size={18} />
+          <User className="text-white/100 mr-3" size={18} />
           <input 
             type="text" 
             name="name"
             required
             placeholder="e.g. Rahul"
-            className="w-full outline-none bg-transparent text-white font-bold placeholder:text-white/20"
+            className="w-full outline-none bg-transparent text-white font-bold placeholder:text-white/40"
             onChange={handleInputChange}
           />
         </div>
@@ -124,13 +124,13 @@ export default function ContactForm() {
       <div className="group">
         <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Phone Number</label>
         <div className="flex items-center border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
-          <Phone className="text-white/40 mr-3" size={18} />
+          <Phone className="text-white/100 mr-3" size={18} />
           <input 
             type="tel" 
             name="mobile"
             required
             placeholder="10-digit mobile"
-            className="w-full outline-none bg-transparent text-white font-bold placeholder:text-white/20"
+            className="w-full outline-none bg-transparent text-white font-bold placeholder:text-white/40"
             onChange={handleInputChange}
           />
         </div>
@@ -142,7 +142,7 @@ export default function ContactForm() {
       <div className="group">
         <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Service Required</label>
         <div className="flex items-center border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
-          <Settings className="text-white/40 mr-3" size={18} />
+          <Settings className="text-white/100 mr-3" size={18} />
           <select 
             name="serviceType"
             required
@@ -162,7 +162,7 @@ export default function ContactForm() {
       <div className={`group transition-opacity ${!formData.serviceType ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}>
         <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Appliance Brand</label>
         <div className="flex items-center border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
-          <ShieldCheck className="text-white/40 mr-3" size={18} />
+          <ShieldCheck className="text-white/80 mr-3" size={18} />
           <select 
             name="brand"
             required={!!formData.serviceType}
@@ -183,12 +183,12 @@ export default function ContactForm() {
     <div className="group">
       <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Service Location / Address</label>
       <div className="flex items-start border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
-        <MapPin className="text-white/40 mr-3 mt-1" size={18} />
+        <MapPin className="text-white/100 mr-3 mt-1" size={18} />
         <textarea 
           name="address"
           rows="2"
           placeholder="Enter your street, area, and landmark"
-          className="w-full outline-none bg-transparent text-white font-bold placeholder:text-white/20 resize-none"
+          className="w-full outline-none bg-transparent text-white font-bold placeholder:text-white/40 resize-none"
           onChange={handleInputChange}
         ></textarea>
       </div>
