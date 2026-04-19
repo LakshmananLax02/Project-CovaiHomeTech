@@ -28,9 +28,11 @@ export default function HeroSection() {
           </p>
           
           <div>
-            <button className="px-10 py-4 bg-[#002D62] text-white rounded-3xl text-lg font-semibold hover:bg-orange-500 transition duration-150 transform hover:scale-[1.02] shadow-xl">
-              Enquire Now
-            </button>
+          <a href="tel:+917418183318">
+  <button className="px-10 py-4 bg-[#002D62] text-white rounded-3xl text-lg font-semibold hover:bg-orange-500 transition duration-150 transform hover:scale-[1.02] shadow-xl">
+    Enquire Now
+  </button>
+</a>
           </div>
         </div>
 

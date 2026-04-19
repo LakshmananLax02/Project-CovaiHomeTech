@@ -54,7 +54,7 @@ export default function AboutSection() {
       </div>
 
       {/* 2. Video Area */}
-      <div className="relative w-full aspect-[21/9] max-h-[400px] rounded-2xl overflow-hidden group mb-12 shadow-2xl bg-slate-900">
+      <div className="relative w-full aspect-[15/9] max-h-[450px] rounded-2xl overflow-hidden group mb-12 shadow-2xl bg-slate-900">
         <video
           ref={videoRef}
           loop

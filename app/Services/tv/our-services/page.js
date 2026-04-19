@@ -1,16 +1,16 @@
 import Image from "next/image"
 
-import ServicesSection from "../Components/OurServicesCards"
+import ServicesSection from "../../../Components/OurServicesCards"
 
-import WhyChooseUs from '../Components/HomeWhyChooseUs'
+import WhyChooseUs from '../../../Components/HomeWhyChooseUs'
 
-import Marqueebrands from '../Components/MagueeBrands'
+import Marqueebrands from '../../../Components/MagueeBrands'
 
-import Testimonials from "../Components/HomeTestimonials"
+import Testimonials from "../../../Components/HomeTestimonials"
 
-import OurServicesfaq from '../Components/OurServicesfaq'
+import OurServicesfaq from '../../../Components/OurServicesfaq'
 
-import HowWeCanHelp from '../Components/HowWeCanHelp'
+import HowWeCanHelp from '../../../Components/HowWeCanHelp'
 
 
 export const metadata = {

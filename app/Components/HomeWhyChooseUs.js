@@ -40,9 +40,11 @@ export default function WhyChooseUs() {
           <p className="text-slate-300 text-lg mb-10 leading-relaxed">
             Discover a range of services designed to bring comfort
           </p>
-          <button className="px-8 py-3 bg-[#003d7a] hover:bg-orange-500 text-white rounded-full font-semibold transition-all shadow-lg">
-            Enquire Now
-          </button>
+          <a href="tel:+917418183318">
+  <button className="px-10 py-4 bg-[#002D62] text-white rounded-3xl text-lg font-semibold hover:bg-orange-500 transition duration-150 transform hover:scale-[1.02] shadow-xl">
+    Enquire Now
+  </button>
+</a>
         </div>
 
         {/* Right Side: Features Grid */}

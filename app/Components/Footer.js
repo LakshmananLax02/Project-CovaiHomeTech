@@ -89,22 +89,22 @@ export default function Footer() {
       </Link>
     </li>
     <li>
-      <Link href="/about" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+      <Link href="/about-us" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
         About us
       </Link>
     </li>
     <li>
-      <Link href="/works" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+      <Link href="/our-services" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+        Our Services
+      </Link>
+    </li>
+    <li>
+      <Link href="/our-works" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
         Our works
       </Link>
     </li>
     <li>
-      <Link href="/rent-purchase" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
-        Rent and purchase
-      </Link>
-    </li>
-    <li>
-      <Link href="/contact" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
+      <Link href="/contact-us" className="hover:text-orange-500 cursor-pointer transition-all hover:translate-x-1 block">
         Contact us
       </Link>
     </li>

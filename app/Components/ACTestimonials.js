@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight, User } from 'lucide-react';
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,7 +87,7 @@ const Testimonials = () => {
             style={{ transform: `translateX(-${currentIndex * (100 / (typeof window !== 'undefined' && window.innerWidth > 1024 ? 3 : 1))}%)` }}
           >
             {reviews.map((review, index) => (
-              <div key={index} className="min-w-full lg:min-w-[calc(33.333%-16px)] bg-white rounded-3xl p-8 shadow-xl flex flex-col justify-between min-h-[350px]">
+              <div key={index} className="min-w-full lg:min-w-[calc(33.333%-16px)] bg-white rounded-3xl p-8 shadow-xl flex flex-col justify-between min-h-[250px]">
                 <div>
                   {/* Stars */}
                   <div className="flex gap-1 mb-6">
@@ -107,9 +107,9 @@ const Testimonials = () => {
 
                 {/* User Info */}
                 <div className="flex items-center gap-4 mt-8">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-orange-50">
-                    <img src={review.image} alt={review.name} className="w-full h-full object-cover" />
-                  </div>
+                  <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center border-2 border-white shadow-sm overflow-hidden">
+                                    <User className="w-6 h-6 text-[#FF5C00]" />
+                                   </div>
                   <span className="font-bold text-slate-900">{review.name}</span>
                 </div>
               </div>

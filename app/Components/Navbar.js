@@ -82,18 +82,18 @@ const brandData = {
     { name: "Haier", slug: "haierac" }
   ],
   tv: [
-    { name: "Sony", slug: "sonytv" },
-    { name: "Samsung", slug: "samsung" },
-    { name: "LG", slug: "lg" },
-    { name: "MI (Xiaomi)", slug: "mi-xiaomi" },
-    { name: "OnePlus", slug: "oneplus" },
-    { name: "TCL", slug: "tcl" },
-    { name: "Panasonic", slug: "panasonic" },
-    { name: "Haier", slug: "haier" },
-    { name: "Vu", slug: "vu" },
-    { name: "Onida", slug: "onida" },
-    { name: "Philips", slug: "philips" },
-    { name: "Realme", slug: "realme" }
+    { name: "Sony", slug: "our-services" },
+    { name: "Samsung", slug: "our-services" },
+    { name: "LG", slug: "our-services" },
+    { name: "MI (Xiaomi)", slug: "our-services" },
+    { name: "OnePlus", slug: "our-services" },
+    { name: "TCL", slug: "our-services" },
+    { name: "Panasonic", slug: "our-services" },
+    { name: "Haier", slug: "our-services" },
+    { name: "Vu", slug: "our-services" },
+    { name: "Onida", slug: "our-services" },
+    { name: "Philips", slug: "our-services" },
+    { name: "Realme", slug: "our-services" }
   ]
 };
 
@@ -168,7 +168,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu Links */}
-        <div className="hidden lg:flex items-center gap-16  text-[20px] text-slate-800">
+        <div className="hidden lg:flex items-center gap-16  text-[20px] text-black">
           <Link href="/" className="hover:text-[#FF5C00] transition-colors">Home</Link>
           <Link href="/about-us" className="hover:text-[#FF5C00] transition-colors">About us</Link>
           
@@ -268,12 +268,13 @@ export default function Navbar() {
             </button>
           </div>
 
-          <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-2 font-bold text-slate-800 text-lg">
+          <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-2 text-black text-lg">
             <Link href="/" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">Home</Link>
             <Link href="/about-us" onClick={handleMobileClose} className="py-2 hover:text-[#FF5C00] transition-colors">About Us</Link>
 
             {/* ── Mobile Services Accordion ── */}
             <div className="flex flex-col">
+              <Link href='/our-services'>
               <button
                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                 className="flex items-center justify-between py-2 w-full text-left hover:text-[#FF5C00] transition-colors"
@@ -284,6 +285,7 @@ export default function Navbar() {
                   className={`transition-transform duration-300 ${isMobileServicesOpen ? "rotate-180 text-[#FF5C00]" : ""}`}
                 />
               </button>
+              </Link>
 
               {/* Accordion Panel */}
               <div
