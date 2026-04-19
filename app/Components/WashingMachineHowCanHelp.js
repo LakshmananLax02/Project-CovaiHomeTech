@@ -30,7 +30,7 @@ const steps = [
 ];
 
   return (
-    <section className="py-12 md:py-20 px-8 bg-white overflow-hidden">
+    <section className="py-12 md:py-20 px-12 bg-white overflow-hidden">
       {/* 1. Header Section */}
       <div className="text-center mb-12 md:mb-16 flex flex-col items-center">
         <span className="bg-[#FF5C00] text-white text-[10px] font-black px-5 py-1.5 rounded-full uppercase tracking-[0.2em] shadow-lg shadow-orange-500/20">
@@ -49,7 +49,7 @@ const steps = [
         
         {/* Featured Image */}
         <div className="relative pt-2 order-first lg:order-last">
-          <div className="relative rounded-[30px] md:rounded-[50px] overflow-hidden border-[8px] md:border-[12px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] aspect-square md:aspect-[4/5] lg:h-[550px]">
+          <div className="relative rounded-[30px] md:rounded-[50px] overflow-hidden border-[8px] md:border-[12px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] aspect-square md:aspect-[10/10] lg:h-[550px]">
             <Image 
               src="/images/howcanhelpimg.png" 
               alt="Technician repairing washing machine"

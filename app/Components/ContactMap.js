@@ -17,7 +17,7 @@ export default function FindUsSection() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-start">
         
         {/* Left Side: Google Map Iframe with Pin Focus */}
-        <div className="w-full lg:w-2/3 h-[450px] md:h-[550px] rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-slate-50 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(0,140,255,0.15)]">
+        <div className="w-full lg:w-2/3 h-[450px] md:h-[550px] rounded-[1rem] overflow-hidden shadow-2xl border-8 border-slate-50 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(0,140,255,0.15)]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d563.8042692948216!2d76.9756896853128!3d11.040048478725296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858689d7922fb%3A0x58fb7e9df807a5e6!2s28-B%2C%20Nallimarathottam%2C%20Sridevi%20Nagar%2C%20Ganapathy%2C%20Coimbatore%2C%20Tamil%20Nadu%20641006!5e0!3m2!1sen!2sin!4v1776360957199!5m2!1sen!2sin"
             width="100%"

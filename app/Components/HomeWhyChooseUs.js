@@ -26,11 +26,11 @@ export default function WhyChooseUs() {
   ];
 
   return (
-<section className="relative mx-4 md:mx-8 my-10 py-16 md:py-24 bg-gradient-to-r from-[#3d2315] via-[#1a2533] to-[#0a1e33] text-white overflow-hidden rounded-[1rem]">      
+<section className="relative mx-5 md:mx-8 my-10 py-16 md:py-24 bg-gradient-to-r from-[#3d2315] via-[#1a2533] to-[#0a1e33] text-white overflow-hidden rounded-[1rem]">      
       <div className="container  mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         {/* Left Side: Heading Content */}
-        <div className="max-w-md p-4">
+        <div className="max-w-md p-8">
           <span className="bg-orange-600 text-white text-[10px] uppercase font-bold px-3 py-1 rounded-full tracking-widest">
             Why Choose Us
           </span>

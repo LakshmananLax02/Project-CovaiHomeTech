@@ -44,7 +44,7 @@ export default function ServiceGrid() {
       </div>
 
       {/* The Grid - full width, no container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-7">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-5">
         {services.map((service, index) => (
           <div 
             key={index} 

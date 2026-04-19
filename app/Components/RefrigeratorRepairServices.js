@@ -22,8 +22,7 @@ const commonProblems = [
 
 export default function RefrigeratorRepairServices() {
   return (
-    <section className="py-12 px-6 max-w-7xl mx-auto font-sans text-black">
-      
+      <section className="py-12 px-8 max-w-7xl mx-auto font-sans text-black">      
       {/* Header Tag */}
       <div className="text-center mb-6">
         <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase">
