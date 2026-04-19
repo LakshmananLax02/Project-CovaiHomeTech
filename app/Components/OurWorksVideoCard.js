@@ -100,8 +100,7 @@ export default function OurWorksGallery() {
               onClick={() => setSelectedVideo(null)}
             ></div>
 
-            {/* Video Container */}
-            <div className="relative w-full max-w-5xl aspect-video bg-black rounded-[2rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10">
+           <div className="relative w-full max-w-5xl h-[400px] md:h-[500px] bg-black rounded-[2rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10">
               
               {/* Close Button */}
               <button 
@@ -121,11 +120,7 @@ export default function OurWorksGallery() {
                 Your browser does not support the video tag.
               </video>
 
-              {/* Video Title Overlay (Bottom) */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent pointer-events-none">
-                <p className="text-orange-500 font-black text-xs uppercase tracking-[0.2em] mb-2">Currently Playing</p>
-                <h4 className="text-white text-2xl font-black tracking-tight">{selectedVideo.title}</h4>
-              </div>
+            
             </div>
           </div>
         )}

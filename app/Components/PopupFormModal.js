@@ -55,7 +55,7 @@ export default function BookingModal({ isOpen, onClose }) {
       />
 
       {/* Modal Content */}
-      <div className="relative w-full max-w-5xl bg-white rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:flex-row animate-in fade-in zoom-in duration-300 max-h-[90vh] overflow-y-auto">
+      <div className="relative w-full max-w-5xl bg-white rounded-2xl md:rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row animate-in fade-in zoom-in duration-300 max-h-[90vh] overflow-y-auto">
         
         {/* Close Button */}
         <button 
@@ -66,10 +66,10 @@ export default function BookingModal({ isOpen, onClose }) {
         </button>
 
         {/* Left Panel */}
-        <div className="md:w-1/3 bg-[#002D62] p-8 md:p-10 text-white flex flex-col justify-between min-h-[200px]">
+        <div className="md:w-1/3 bg-[#002D62] p-8 md:p-10 text-white flex flex-col justify-between min-h-[300px]">
           <div>
             <div className="w-12 h-1 bg-[#FF5C00] mb-6"></div>
-            <h2 className="text-2xl md:text-3xl font-black uppercase italic leading-tight mb-4">
+            <h2 className="text-2xl md:text-3xl font-black uppercase leading-tight mb-4">
               Service <br />Booking
             </h2>
            <p className="text-slate-400 text-sm font-medium leading-relaxed">
@@ -151,7 +151,7 @@ export default function BookingModal({ isOpen, onClose }) {
               </div>
             </div>
 
-            <button type="submit" className="w-full bg-[#FF5C00] text-white font-black py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-[#002D62] shadow-lg transition-all active:scale-95 group">
+            <button type="submit" className="w-full bg-[#002D62] text-white font-black py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-500 shadow-lg transition-all active:scale-95 group">
               <span>BOOK NOW</span>
               <Send size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>

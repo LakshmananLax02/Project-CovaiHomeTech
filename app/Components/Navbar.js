@@ -9,7 +9,7 @@ import {
 import BookingFormModal from '../Components/PopupFormModal'
 
 // --- Sub-components for cleaner code ---
-const SocialIcons = () => (
+const SocialIcons = ({ sizeClasses = "w-6 h-6" }) => (
   <div className="flex gap-4">
     <FacebookIcon />
     <TwitterIcon />
@@ -135,22 +135,42 @@ export default function Navbar() {
     setIsMobileServicesOpen(false);
   };
 
+  const socialLinks = {
+    facebook: "https://www.facebook.com/share/1B1VjtpwTG/",
+    twitter: "https://twitter.com/your-profile",
+    instagram: "https://www.instagram.com/covaihometech?igsh=MWswZDd1b3JzcDN6Zw==",
+    google: "https://g.page/r/your-google-business-id" // Link to your Google Business profile
+  };
   return (
 
     <>
     <header className="w-full sticky top-0 z-[100] bg-white shadow-sm font-sans">
       {/* 1. TOP BAR (Hidden on Mobile) */}
-      <div className="hidden md:flex bg-[#002D62] text-white text-[12px] px-6 lg:px-24 py-2 justify-between items-center">
-        <div className="flex items-center gap-8">
-          <SocialIcons />
+      <div className="hidden md:flex bg-[#002D62] text-white text-[16px] px-6 lg:px-6 py-2 justify-between items-center">
+        <div className="gap-4  flex">
+           <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <FacebookIcon />
+      </a>
+      
+      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <TwitterIcon />
+      </a>
+      
+      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <InstagramIcon />
+      </a>
+      
+      <a href={socialLinks.google} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <GoogleIcon />
+      </a>
           <span className="flex items-center gap-1.5 border-l border-white/20 pl-4 uppercase tracking-wider">
-            <Clock size={13} className="text-[#FF5C00]" /> Mon – Sat 8:00 – 8:00
+            <Clock size={20} className="text-[#FF5C00]" /> Mon – Sat 8:00 – 8:00
           </span>
         </div>
         <div className="flex items-center gap-6">
-          <span className="flex items-center gap-1.5"><MapPin size={13} className="text-[#FF5C00]" /> Coimbatore, TN</span>
-          <span className="flex items-center gap-1.5"><Phone size={13} className="text-[#FF5C00]" /> +91 7418183318 | 7339642414</span>
-          <span className="flex items-center gap-1.5"><Mail size={13} className="text-[#FF5C00]" /> covaihometech@gmail.com</span>
+          <span className="flex items-center gap-1.5"><MapPin size={20} className="text-[#FF5C00]" /> Coimbatore, TN</span>
+          <span className="flex items-center gap-1.5"><Phone size={20} className="text-[#FF5C00]" /> +91 7418183318 | 7339642414</span>
+          <span className="flex items-center gap-1.5"><Mail size={20} className="text-[#FF5C00]" /> covaihometech@gmail.com</span>
         </div>
       </div>
 
@@ -295,22 +315,24 @@ export default function Navbar() {
               >
                 <div className="bg-slate-50 rounded-xl mt-1 mb-2 overflow-hidden border border-slate-100">
                   {/* Category Tabs */}
-                  <div className="flex border-b border-slate-200 overflow-x-auto scrollbar-hide">
-                    {categories.map((cat) => (
-                      <button
-                        key={cat.id}
-                        onClick={() => setMobileActiveTab(cat.id)}
-                        className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-2.5 text-[11px] font-bold transition-all border-b-2 ${
-                          mobileActiveTab === cat.id
-                            ? "border-[#FF5C00] text-[#FF5C00] bg-white"
-                            : "border-transparent text-slate-500 hover:text-slate-700"
-                        }`}
-                      >
-                        <span className="w-3.5 h-3.5 flex-shrink-0">{cat.icon}</span>
-                        <span className="whitespace-nowrap">{cat.label}</span>
-                      </button>
-                    ))}
-                  </div>
+                  {/* 1. Changed to grid-cols-2 for a side-by-side orderly look on mobile. 
+    2. Removed overflow-x-auto and scrollbar-hide. */}
+<div className="grid grid-cols-2 md:flex border-b border-slate-200">
+  {categories.map((cat) => (
+    <button
+      key={cat.id}
+      onClick={() => setMobileActiveTab(cat.id)}
+      className={`flex items-center justify-center gap-1.5 px-3 py-2.5 text-[11px] font-bold transition-all border-b-2 ${
+        mobileActiveTab === cat.id
+          ? "border-[#FF5C00] text-[#FF5C00] bg-white"
+          : "border-transparent text-slate-500 hover:text-slate-700 bg-slate-50/50"
+      }`}
+    >
+      <span className="w-3.5 h-3.5 flex-shrink-0">{cat.icon}</span>
+      <span className="whitespace-nowrap">{cat.label}</span>
+    </button>
+  ))}
+</div>
 
                   {/* Brand Links */}
                   <div className="p-3">
@@ -341,8 +363,22 @@ export default function Navbar() {
                   <a href="tel:+918800115244" className="flex items-center gap-3 text-sm font-medium text-slate-600">
                     <Phone size={18} className="text-[#FF5C00]" /> +91 8800115244
                   </a>
-                  <div className="flex justify-start pt-2">
-                    <SocialIcons />
+                   <div className="pt-2 gap-4 flex">
+        <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <FacebookIcon />
+      </a>
+      
+      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <TwitterIcon />
+      </a>
+      
+      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <InstagramIcon />
+      </a>
+      
+      <a href={socialLinks.google} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <GoogleIcon />
+      </a>
                   </div>
                </div>
             </div>

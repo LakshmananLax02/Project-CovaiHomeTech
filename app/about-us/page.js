@@ -38,7 +38,7 @@ export default function AboutUs(){
     
     {/* LEFT COLUMN: Text Content */}
     <div className="text-center md:text-left pt-12 md:pt-0">
-      <h1 className="text-white text-5xl md:text-7xl font-black mb-6 tracking-tight leading-tight uppercase italic">
+      <h1 className="text-white text-5xl md:text-7xl font-black mb-6 tracking-tight leading-tight uppercase">
         About us
       </h1>
       
@@ -47,7 +47,7 @@ export default function AboutUs(){
       </p>
 
       <a href="tel:+917418183318">
-        <button className="px-10 py-4 bg-[#002D62] text-white rounded-3xl text-lg font-bold hover:bg-orange-600 transition-all transform hover:scale-[1.05] shadow-2xl">
+        <button className="px-10 py-4 bg-[#002D62] text-white rounded-xl text-lg font-bold hover:bg-orange-600 transition-all transform hover:scale-[1.05] shadow-2xl">
           Enquire Now
         </button>
       </a>

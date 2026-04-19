@@ -27,21 +27,23 @@ export default function Footer() {
   return (
     <footer className="relative w-full text-white overflow-hidden">
       {/* Reduced overall top padding from pt-16 to pt-10 */}
-      <div className="bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] pt-10 pb-8 px-6 md:px-12 lg:px-24">
+      <div className="bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] pt-10 pb-8 px-6 md:px-12 lg:px-6">
         
         {/* 1. Header - Reduced bottom margin from mb-16 to mb-8 */}
         <div className="mb-8">
           <div className="flex flex-col sm:flex-row items-center sm:items-end gap-6">
-            <div className="relative w-30 h-18 transition-all hover:scale-105 duration-500 bg-white rounded-xl">
-              <Image 
-                src="/images/Logo.png" 
-                alt="Covai Home Tech Logo"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-contain"
-                priority
-              />
-            </div>
+          <div className="flex justify-start w-full"> {/* Parent wrapper ensures left alignment */}
+  <div className="relative w-32 h-18 transition-all hover:scale-105 duration-500 bg-white rounded-xl p-1">
+    <Image 
+      src="/images/Logo.png" 
+      alt="Covai Home Tech Logo"
+      fill
+      sizes="128px"
+      className="object-contain p-1" 
+      priority
+    />
+  </div>
+</div>
             
           </div>
           {/* Reduced top margin of the HR from mt-12 to mt-6 */}
@@ -114,7 +116,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/90 border-l-2 border-orange-500/70 pl-4">Address</h3>
             <p className="text-sm leading-relaxed text-white/60 max-w-[240px]">
-              Maecens rhoncus molese conubia lores mauris class etiam potenti been nonum ectus folish consequat
+               28B, Nallimarathottam,<br/> Moogambikai Nagar,<br />
+            Ganapathy, Coimbatore - 641006.
             </p>
           </div>
 

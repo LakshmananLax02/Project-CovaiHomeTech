@@ -55,7 +55,7 @@ const Testimonials = () => {
   return (
     <section className="py-10 px-6 md:px-6 lg:px-10 bg-white">
       {/* 1. Main Container with Gradient Background */}
-      <div className="relative rounded-[40px] bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] p-8 md:p-16 overflow-hidden">
+      <div className="relative rounded-[16px] bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] p-8 md:p-16 overflow-hidden">
         
         {/* 2. Header Section */}
         <div className="text-center mb-12 flex flex-col items-center relative z-10">
@@ -84,8 +84,10 @@ const Testimonials = () => {
         <div className="relative overflow-hidden z-10 px-2 md:px-10">
           <div 
             className="flex gap-6 transition-transform duration-500 ease-out"
-            style={{ transform: `translateX(-${currentIndex * (100 / (typeof window !== 'undefined' && window.innerWidth > 1024 ? 3 : 1))}%)` }}
+          
+       style={{ transform: `translateX(calc(-${currentIndex} * (100% + 24px) / ${typeof window !== 'undefined' && window.innerWidth > 1024 ? 3 : 1}))` }}
           >
+
             {reviews.map((review, index) => (
               <div key={index} className="min-w-full lg:min-w-[calc(33.333%-16px)] bg-white rounded-3xl p-8 shadow-xl flex flex-col justify-between min-h-[250px]">
                 <div>

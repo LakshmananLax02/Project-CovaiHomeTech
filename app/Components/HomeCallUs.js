@@ -3,7 +3,7 @@ import React from 'react';
 const CallToAction = () => {
   return (
     <section className="px-6 md:px-10 lg:px-8 py-12">
-      <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] p-8 md:p-16 flex flex-col md:flex-row items-center min-h-[350px]">
+      <div className="relative overflow-hidden rounded-[16px] bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] p-8 md:p-16 flex flex-col md:flex-row items-center min-h-[350px]">
         
         {/* Text Content */}
         <div className="relative z-10 w-full md:w-3/5 text-center md:text-left">
@@ -15,7 +15,7 @@ const CallToAction = () => {
             Old Ac Sale Purchase & AC Rentals, Emergency Rent & Purchase
           </p>
           
-          <button className="bg-[#002d62] hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-2xl transition-all duration-300 shadow-xl active:scale-95">
+          <button className="bg-[#002d62] hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-xl active:scale-95">
             Call us now
           </button>
         </div>

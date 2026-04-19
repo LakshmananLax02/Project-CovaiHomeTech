@@ -25,7 +25,7 @@ export default function FeatureCards() {
         {features.map((item, index) => (
           <div 
             key={index}
-            className="relative p-8 rounded-[40px] overflow-hidden min-h-[220px] flex flex-col justify-between"
+            className="relative p-8 rounded-[16px] overflow-hidden min-h-[220px] flex flex-col justify-between"
             style={{
               background: "linear-gradient(to right, #8B5E3C, #1E4D7B)"
             }}

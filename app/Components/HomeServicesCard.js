@@ -48,7 +48,7 @@ export default function ServiceGrid() {
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="relative aspect-[3/4] rounded-[1.5rem] overflow-hidden group shadow-2xl"
+            className="relative aspect-[3/4] rounded-[1rem] overflow-hidden group shadow-2xl"
           >
             {/* Background Technician Image */}
             <img 
@@ -68,7 +68,7 @@ export default function ServiceGrid() {
 
             {/* The Floating Gradient Content Box */}
             <div className="absolute bottom-3 left-3 right-3 z-10">
-              <div className="bg-gradient-to-r from-[#8B5E3C] to-[#1E4D7B] rounded-[1.8rem] p-3 text-center min-h-[45px] flex flex-col justify-center items-center shadow-inner">
+              <div className="bg-gradient-to-r from-[#8B5E3C] to-[#1E4D7B] rounded-[1rem] p-3 text-center min-h-[45px] flex flex-col justify-center items-center shadow-inner">
                 <h3 className="text-white font-bold text-l mb-1 leading-tight">
                   {service.title}
                 </h3>

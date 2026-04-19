@@ -28,8 +28,8 @@ export default function HeroSection() {
           </p>
           
           <div>
-          <a href="tel:+917418183318">
-  <button className="px-10 py-4 bg-[#002D62] text-white rounded-3xl text-lg font-semibold hover:bg-orange-500 transition duration-150 transform hover:scale-[1.02] shadow-xl">
+          <a href="tel:+917418183318" >
+  <button className="px-10 py-4 bg-[#002D62] text-white rounded-xl text-lg font-semibold hover:bg-orange-500 transition duration-150 transform hover:scale-[1.02] shadow-xl">
     Enquire Now
   </button>
 </a>
@@ -38,15 +38,7 @@ export default function HeroSection() {
 
       {/* Right Column: Agent Image (Now Solid on Mobile) */}
 <div className="flex justify-end items-end h-full w-full absolute bottom-0 left-0 md:relative md:flex z-30 pointer-events-none">
-  <div className="relative w-[280px] sm:w-[380px] lg:w-[450px] aspect-[3/4] md:-right-10 lg:-right-20">
-    <Image
-      src="/images/carouselmecimg.png"
-      alt="Service Technician"
-      fill
-      className="object-contain object-bottom transition-opacity duration-500"
-      priority 
-    />
-  </div>
+
 </div>
       </div>
     </section>
