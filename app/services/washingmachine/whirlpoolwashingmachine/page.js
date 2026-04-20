@@ -77,7 +77,8 @@ export default function whirlpoolwashingmachine(){
                 Introduction
               </h2>
               <p className="text-slate-600 leading-relaxed text-lg">
-                At **Covai Home Tech**, we provide professional Whirlpool washing machine repair 
+                At Covai Home Tech
+, we provide professional Whirlpool washing machine repair 
                 services in Coimbatore with fast doorstep support. Our experienced technicians 
                 are trained to handle all Whirlpool washing machine models, including top load, 
                 front load, semi-automatic, and fully automatic machines. We ensure quick diagnosis, 

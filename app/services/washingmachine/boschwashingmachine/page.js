@@ -77,7 +77,8 @@ export default function boschwashingmachine(){
                 Introduction
               </h2>
               <p className="text-slate-600 leading-relaxed text-lg">
-                At **Covai Home Tech**, we provide professional Bosch washing machine repair 
+                At Covai Home Tech
+, we provide professional Bosch washing machine repair 
                 services in Coimbatore with fast doorstep support. Our experienced technicians 
                 are trained to handle all Bosch washing machine models, including top load, 
                 front load, semi-automatic, and fully automatic machines. We ensure quick diagnosis, 

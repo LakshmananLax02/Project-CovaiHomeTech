@@ -8,15 +8,7 @@ import {
 } from "lucide-react";
 import BookingFormModal from '../Components/PopupFormModal'
 
-// --- Sub-components for cleaner code ---
-const SocialIcons = ({ sizeClasses = "w-6 h-6" }) => (
-  <div className="flex gap-4">
-    <FacebookIcon />
-    <TwitterIcon />
-    <InstagramIcon />
-    <GoogleIcon />
-  </div>
-);
+
 
 
 
@@ -148,19 +140,19 @@ export default function Navbar() {
       {/* 1. TOP BAR (Hidden on Mobile) */}
       <div className="hidden md:flex bg-[#002D62] text-white text-[16px] px-6 lg:px-6 py-2 justify-between items-center">
         <div className="gap-4  flex">
-           <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+           <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
         <FacebookIcon />
       </a>
       
-      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
         <TwitterIcon />
       </a>
       
-      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
         <InstagramIcon />
       </a>
       
-      <a href={socialLinks.google} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.google} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
         <GoogleIcon />
       </a>
           <span className="flex items-center gap-1.5 border-l border-white/20 pl-4 uppercase tracking-wider">

@@ -124,7 +124,6 @@ export default function Footer() {
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest mb-4 text-white/90 border-l-2 border-orange-500/70 pl-4">Contact Us</h3>
             <div className="mb-4">
-              <p className="text-orange-500 text-[10px] font-black uppercase tracking-widest mb-1">Primary Line</p>
               <p className="text-2xl font-black tracking-tight text-white">+91 7418183318</p><br></br>
               <p className="text-2xl font-black tracking-tight text-white">+91 7339642414</p>
 

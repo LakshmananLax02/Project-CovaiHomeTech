@@ -27,7 +27,7 @@ export default function FeatureCards() {
             key={index}
             className="relative p-8 rounded-[16px] overflow-hidden min-h-[220px] flex flex-col justify-between"
             style={{
-              background: "linear-gradient(to right, #8B5E3C, #1E4D7B)"
+              background: "linear-gradient(to right, #8B5E3C, #002D62)"
             }}
           >
             <div className="flex gap-5">

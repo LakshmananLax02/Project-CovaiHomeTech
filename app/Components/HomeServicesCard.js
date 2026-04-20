@@ -68,7 +68,7 @@ export default function ServiceGrid() {
 
             {/* The Floating Gradient Content Box */}
             <div className="absolute bottom-3 left-3 right-3 z-10">
-              <div className="bg-gradient-to-r from-[#8B5E3C] to-[#1E4D7B] rounded-[1rem] p-3 text-center min-h-[45px] flex flex-col justify-center items-center shadow-inner">
+              <div className="bg-gradient-to-r from-[#8B5E3C] to-[#002D62] rounded-[1rem] p-3 text-center min-h-[45px] flex flex-col justify-center items-center shadow-inner">
                 <h3 className="text-white font-bold text-l mb-1 leading-tight">
                   {service.title}
                 </h3>
