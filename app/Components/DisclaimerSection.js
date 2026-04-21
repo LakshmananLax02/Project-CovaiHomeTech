@@ -3,15 +3,22 @@ import React from 'react';
 const Disclaimer = () => {
   return (
     <section className="bg-white py-6 px-4 md:px-8">
+    
       <div className="max-w-7xl mx-auto">
 
-        <div className="bg-[#002D62] rounded-xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+        <div className="bg-[#002D62] rounded-xl p-8 md:p-12 shadow-2xl relative overflow-hidden text-center">
+
+            <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest">
+          Disclaimer
+        </span>
           {/* Decorative Background Accent */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#FF5C00]/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
           
           <div className="relative z-10">
+            
             <div className="flex items-center gap-4 mb-8">
               <div className="bg-[#FF5C00] h-10 w-2 rounded-full"></div>
+              
               <h2 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tighter">
                  Disclaimer
               </h2>

@@ -1,6 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
-
-
 
 @theme inline {
   --color-background: var(--background);
@@ -9,10 +9,8 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Helvetica, sans-serif;
+  font-family: var(--font-urbanist), var(--font-montserrat), sans-serif;
 }

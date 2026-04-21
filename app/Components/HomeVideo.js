@@ -83,7 +83,7 @@ export default function AboutSection() {
       </div>
 
       {/* 3. Statistics Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-cyan-50/50 rounded-2xl p-8">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-cyan-100 rounded-2xl p-8">
         {stats.map((stat, index) => (
           <div key={index} className="text-center flex flex-col items-center">
             <span className="text-3xl md:text-4xl font-black text-slate-900 mb-2">

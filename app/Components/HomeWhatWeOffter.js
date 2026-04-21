@@ -36,6 +36,9 @@ export default function WhatWeOffer() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
+          <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest">
+          Offers
+        </span>
           <h2 className="text-4xl font-bold mt-3 text-black">What we offer</h2>
           <div className="w-20 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
           {/* <p className="mt-6 text-slate-500 font-medium max-w-2xl mx-auto">
