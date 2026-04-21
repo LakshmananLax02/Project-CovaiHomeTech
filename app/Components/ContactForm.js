@@ -106,7 +106,7 @@ export default function ContactForm() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {/* Name */}
       <div className="group">
-        <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Full Name</label>
+        <label className="text-[10px] font-black uppercase text-white mb-2 block tracking-widest">Full Name</label>
         <div className="flex items-center border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
           <User className="text-white/100 mr-3" size={18} />
           <input 
@@ -122,7 +122,7 @@ export default function ContactForm() {
 
       {/* Mobile */}
       <div className="group">
-        <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Phone Number</label>
+        <label className="text-[10px] font-black uppercase text-white mb-2 block tracking-widest">Phone Number</label>
         <div className="flex items-center border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
           <Phone className="text-white/100 mr-3" size={18} />
           <input 
@@ -140,7 +140,7 @@ export default function ContactForm() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {/* Service Dropdown */}
       <div className="group">
-        <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Service Required</label>
+        <label className="text-[10px] font-black uppercase text-white mb-2 block tracking-widest">Service Required</label>
         <div className="flex items-center border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
           <Settings className="text-white/100 mr-3" size={18} />
           <select 
@@ -160,7 +160,7 @@ export default function ContactForm() {
 
       {/* Brand Dropdown */}
       <div className={`group transition-opacity ${!formData.serviceType ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}>
-        <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Appliance Brand</label>
+        <label className="text-[10px] font-black uppercase text-white mb-2 block tracking-widest">Appliance Brand</label>
         <div className="flex items-center border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
           <ShieldCheck className="text-white/80 mr-3" size={18} />
           <select 
@@ -181,7 +181,7 @@ export default function ContactForm() {
 
     {/* Address Field */}
     <div className="group">
-      <label className="text-[10px] font-black uppercase text-slate-400 mb-2 block tracking-widest">Service Location / Address</label>
+      <label className="text-[10px] font-black uppercase text-white mb-2 block tracking-widest">Service Location / Address</label>
       <div className="flex items-start border-b-2 border-white/10 group-focus-within:border-[#FF5C00] transition-colors py-2">
         <MapPin className="text-white/100 mr-3 mt-1" size={18} />
         <textarea 
