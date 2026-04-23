@@ -3,9 +3,7 @@ import React from 'react';
 const CallToAction = () => {
   return (
     <section className="px-4 md:px-10 lg:px-8 py-12 text-center">
-        <span className="bg-[#FF6600] text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest">
-          Call us
-        </span>
+       
       <div className="relative overflow-hidden rounded-[16px] bg-gradient-to-r from-[#5d3a27] via-[#2d2d44] to-[#002d62] p-8 md:p-16 flex flex-col md:flex-row items-center min-h-[350px] mt-5">
         
         {/* Text Content */}

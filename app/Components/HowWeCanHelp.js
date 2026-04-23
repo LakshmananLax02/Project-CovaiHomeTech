@@ -49,7 +49,15 @@ export default function HowWeCanHelp() {
         
         {/* Featured Image */}
         <div className="relative pt-2 order-first lg:order-last">
-          <div className="relative rounded-[25px] md:rounded-[25px] overflow-hidden border-[8px] md:border-[12px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] aspect-square md:aspect-[10/10  ] lg:h-[550px]">
+          <div className="relative rounded-[25px] md:rounded-[25px] overflow-hidden border-[8px] md:border-[12px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] aspect-square md:aspect-[10/10] lg:h-[550px]">
+
+
+
+
+
+
+
+
             <Image 
               src="/images/howcanhelpimg.png" 
               alt="Technician repairing washing machine"
