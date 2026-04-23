@@ -127,8 +127,8 @@ export default function OurWorksGallery() {
 
         {/* Online Indicator */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full border border-slate-200 shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-xl border border-slate-200 shadow-sm">
+            <span className="w-2 h-2 rounded-xl bg-green-500 animate-pulse"></span>
             <p className="text-slate-600 text-sm font-bold uppercase tracking-widest">
               Available for service today
             </p>
