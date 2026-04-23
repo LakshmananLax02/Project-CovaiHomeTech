@@ -356,19 +356,19 @@ export default function Navbar() {
                     <Phone size={18} className="text-[#FF5C00]" /> +91 8800115244
                   </a>
                    <div className="pt-2 gap-4 flex">
-        <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+        <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
         <FacebookIcon />
       </a>
       
-      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
         <TwitterIcon />
       </a>
       
-      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
         <InstagramIcon />
       </a>
       
-      <a href={socialLinks.google} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-4 [&>svg]:h-4 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.google} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
         <GoogleIcon />
       </a>
                   </div>

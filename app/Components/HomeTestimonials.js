@@ -89,7 +89,8 @@ const reviews = [
           >
 
             {reviews.map((review, index) => (
-              <div key={index} className="min-w-full lg:min-w-[calc(33.333%-16px)] bg-white rounded-3xl p-8 shadow-xl flex flex-col justify-between min-h-[250px]">
+                <div key={index} className="min-w-full lg:min-w-[calc(33.333%-16px)] bg-white rounded-xl p-8 shadow-xl flex flex-col justify-between min-h-[250px]">
+
                 <div>
                   {/* Stars */}
                   <div className="flex gap-1 mb-6">

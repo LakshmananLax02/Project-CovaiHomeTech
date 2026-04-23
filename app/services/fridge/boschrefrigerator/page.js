@@ -49,7 +49,7 @@ export default function boschrefrigerator(){
 
           {/* BIG IMAGE CONTAINER (At the bottom of the header section) */}
           <div className="mt-16 w-full">
- <div className="relative aspect-[10/11] rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl group">              <img 
+ <div className="relative aspect-[10/11] rounded-[1rem] overflow-hidden border-4 border-white/10 shadow-2xl group">              <img 
                 src="/fridgeimages/boschfridge.jpg" 
                 alt="Professional Bosch Refrigerator Repair Service" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
@@ -57,7 +57,7 @@ export default function boschrefrigerator(){
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
               
               <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
-   <div className="bg-[#FF5C00] text-white px-6 py-2 rounded-2xl shadow-xl flex items-center justify-between mb-3 w-full max-w-sm">
+   <div className="bg-[#FF5C00] text-white px-6 py-2 rounded-xl shadow-xl flex items-center justify-between mb-3 w-full max-w-sm">
   {/* Text stays on the far left */}
   <span className="font-black italic text-xl">Bosch</span>
 
@@ -93,7 +93,8 @@ We ensure quick diagnosis, affordable service charges, and genuine spare parts f
             </article>
 
             {/* About Our Service */}
-            <article className="bg-slate-50 p-8 md:p-12 rounded-[3rem] border border-slate-100 shadow-sm">
+            <article className="bg-slate-50 p-8 md:p-12 rounded-[7px] border border-slate-100 shadow-sm">
+
               <h2 className="text-3xl font-black text-slate-900 mb-6">About Our Service</h2>
               <p className="text-slate-600 leading-relaxed text-lg mb-8">
                  Our expert team offers reliable repair and maintenance services for all Bosch refrigerator issues. Whether it is a minor fault or major repair, we provide 
@@ -182,7 +183,8 @@ We ensure quick diagnosis, affordable service charges, and genuine spare parts f
                 <p className="text-sm text-blue-200 mb-8 font-medium italic">
                   Need fast and reliable Bosch Refrigerator service in Coimbatore?
                 </p>
-                 <Link href="/contact-us"> <button className="w-full bg-[#FF5C00] hover:bg-orange-500 text-white font-black py-5 rounded-2xl transition-all shadow-xl active:scale-95 text-lg">
+                 <Link href="/contact-us"> <button className="w-full bg-[#FF5C00] hover:bg-orange-500 text-white font-black py-5 rounded-xl transition-all shadow-xl active:scale-95 text-lg">
+
                   Book Service Today
                 </button></Link>
 

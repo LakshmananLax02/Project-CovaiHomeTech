@@ -101,7 +101,7 @@ export default function ServicesSection() {
 
               {/* Book Now Button */}
               <Link href="/contact-us" className="w-full">
-                <button className="w-full bg-[#003366] text-white font-black py-4 rounded-2xl hover:bg-[#FF6600] transition-all transform active:scale-95 tracking-wide">
+                <button className="w-full bg-[#003366] text-white font-black py-4 rounded-xl hover:bg-[#FF6600] transition-all transform active:scale-95 tracking-wide">
                   Book Now
                 </button>
               </Link>

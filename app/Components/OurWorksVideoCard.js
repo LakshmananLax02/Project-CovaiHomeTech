@@ -49,7 +49,7 @@ export default function OurWorksGallery() {
           {workVideos.map((work) => (
             <div 
               key={work.id} 
-              className="group bg-white rounded-[2.5rem] overflow-hidden shadow-lg border border-slate-200 transition-all hover:shadow-2xl cursor-pointer"
+              className="group bg-white rounded-[1rem] overflow-hidden shadow-lg border border-slate-200 transition-all hover:shadow-2xl cursor-pointer"
               onClick={() => setSelectedVideo(work)}
             >
               {/* Thumbnail Container */}
@@ -100,7 +100,7 @@ export default function OurWorksGallery() {
               onClick={() => setSelectedVideo(null)}
             ></div>
 
-           <div className="relative w-full max-w-5xl h-[400px] md:h-[500px] bg-black rounded-[2rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10">
+           <div className="relative w-full max-w-5xl h-[400px] md:h-[500px] bg-black rounded-[1rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10">
               
               {/* Close Button */}
               <button 
