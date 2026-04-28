@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { User, Phone, Settings, ShieldCheck, MapPin, Send, Wrench } from 'lucide-react';
-import { sendBookingEmail } from '../Components/actions';
+import { sendBookingToTelegram } from '../Components/actions';
 
 
 const brandsData = {
@@ -14,33 +14,48 @@ const brandsData = {
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
-    mobile: "",
-    serviceType: "",
-    brand: "",
-    address: ""
-  });
+  name: "",
+  mobile: "",
+  serviceType: "",
+  brand: "",
+  address: ""
+});
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value,
-      ...(name === "serviceType" ? { brand: "" } : {})
-    }));
-  };
+const handleInputChange = (e) => {
+  const { name, value } = e.target;
+  setFormData(prev => ({
+    ...prev,
+    [name]: value,
+    // If the service changes, we reset the brand to keep the data clean
+    ...(name === "serviceType" ? { brand: "" } : {})
+  }));
+};
 
-   const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
   
-  // Start loading state (optional)
-  const result = await sendBookingEmail(formData);
+  // 1. Basic validation (optional but recommended)
+  if (!formData.name || !formData.mobile) {
+    alert("Please fill in your name and mobile number.");
+    return;
+  }
+
+  // 2. Call your Telegram Server Action
+  const result = await sendBookingToTelegram(formData);
 
   if (result.success) {
-    alert("Success! Your booking details have been sent to our team.");
+    alert("Success! Your booking details have been sent to our team via Telegram.");
     
+    // 3. Reset form after success
+    setFormData({
+      name: "",
+      mobile: "",
+      serviceType: "",
+      brand: "",
+      address: ""
+    });
   } else {
-    alert("Something went wrong. Please try calling us directly.");
+    alert("Something went wrong. Please try calling us directly at [Your Phone Number].");
   }
 };
 

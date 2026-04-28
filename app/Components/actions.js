@@ -1,30 +1,46 @@
 "use server";
 
-import { Resend } from 'resend';
+export async function sendBookingToTelegram(formData) {
+ const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+  const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
-// Get your free API key at resend.com
-const resend = new Resend('re_FCsx1eAp_Jzeyk1pDd85sXkKUikZUBFrK');
+  // Clean the address line breaks for better Telegram display
+  const displayAddress = formData.address ? formData.address.replace(/\n/g, ', ') : 'N/A';
 
-export async function sendBookingEmail(formData) {
+  const text = `
+🆕 *New Lead*
+-------------------------------------------------
+👤 *Name:* ${formData.name}
+📞 *Mobile:* ${formData.mobile}
+🛠️ *Service:* ${formData.serviceType}
+🏷️ *Brand:* ${formData.brand}
+📍 *Address:* ${displayAddress}
+-------------------------------------------------
+  `;
+
+  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
   try {
-    const { name, mobile, serviceType, brand, address } = formData;
-
-    const data = await resend.emails.send({
-      from: 'Covaihome Booking <onboarding@resend.dev>',
-      to: ['covaihometechbookings@gmail.com'], // Change this to your business email
-      subject: `New Service Request: ${serviceType}`,
-      html: `
-        <h1>New Booking Received</h1>
-        <p><strong>Customer Name:</strong> ${name}</p>
-        <p><strong>Mobile:</strong> ${mobile}</p>
-        <p><strong>Service Needed:</strong> ${serviceType}</p>
-        <p><strong>Appliance Brand:</strong> ${brand}</p>
-        <p><strong>Address:</strong> ${address}</p>
-      `,
+    const response = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: CHAT_ID,
+        text: text,
+        parse_mode: "Markdown",
+      }),
     });
 
-    return { success: true, data };
+    if (response.ok) {
+      // Return an object with 'success' so your frontend 'if (result.success)' works
+      return { success: true }; 
+    } else {
+      const errorData = await response.json();
+      console.error("Telegram API Error:", errorData);
+      return { success: false };
+    }
   } catch (error) {
-    return { success: false, error };
+    console.error("Network error:", error);
+    return { success: false };
   }
 }

@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { User, Phone, Settings, ShieldCheck, MapPin, Send, X, Wrench} from 'lucide-react';
-import { sendBookingEmail } from '../Components/actions';
+import { sendBookingToTelegram } from '../Components/actions';
 
 const brandsData = {
   "Washing Machine Repair Service": ["LG", "Samsung", "IFB", "Bosch", "Whirlpool", "Haier", "Godrej", "Panasonic", "Onida", "Electrolux", "Videocon"],
@@ -32,17 +32,31 @@ export default function BookingModal({ isOpen, onClose }) {
     }));
   };
 
- const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
   
-  // Start loading state (optional)
-  const result = await sendBookingEmail(formData);
+  // 1. Basic validation (optional but recommended)
+  if (!formData.name || !formData.mobile) {
+    alert("Please fill in your name and mobile number.");
+    return;
+  }
+
+  // 2. Call your Telegram Server Action
+  const result = await sendBookingToTelegram(formData);
 
   if (result.success) {
-    alert("Success! Your booking details have been sent to our team.");
-    onClose();
+    alert("Success! Your booking details have been sent to our team via Telegram.");
+    
+    // 3. Reset form after success
+    setFormData({
+      name: "",
+      mobile: "",
+      serviceType: "",
+      brand: "",
+      address: ""
+    });
   } else {
-    alert("Something went wrong. Please try calling us directly.");
+    alert("Something went wrong. Please try calling us directly at [Your Phone Number].");
   }
 };
 

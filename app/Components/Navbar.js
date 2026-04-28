@@ -138,21 +138,21 @@ export default function Navbar() {
     <>
     <header className="w-full sticky top-0 z-[100] bg-white shadow-sm font-sans">
       {/* 1. TOP BAR (Hidden on Mobile) */}
-      <div className="hidden md:flex bg-[#002D62] text-white text-[16px] px-6 lg:px-6 py-2 justify-between items-center">
+      <div className="hidden md:flex bg-[#002D62] text-white text-[16px] px-8 lg:px-8 py-2 justify-between items-center">
         <div className="gap-4  flex">
-           <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
+           <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-5  [&>svg]:h-5 hover:text-[#FF5C00] transition-colors">
         <FacebookIcon />
       </a>
       
-      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-5 [&>svg]:h-5 hover:text-[#FF5C00] transition-colors">
         <TwitterIcon />
       </a>
       
-      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-5 [&>svg]:h-5 hover:text-[#FF5C00] transition-colors">
         <InstagramIcon />
       </a>
       
-      <a href={socialLinks.google} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-6 [&>svg]:h-6 hover:text-[#FF5C00] transition-colors">
+      <a href={socialLinks.google} target="_blank" rel="noopener noreferrer" className="[&>svg]:w-5 [&>svg]:h-5 hover:text-[#FF5C00] transition-colors">
         <GoogleIcon />
       </a>
           <span className="flex items-center gap-1.5 border-l border-white/20 pl-4 uppercase tracking-wider">
