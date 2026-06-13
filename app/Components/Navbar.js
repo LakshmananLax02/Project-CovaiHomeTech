@@ -167,7 +167,7 @@ export default function Navbar() {
       </div>
 
       {/* 2. MAIN NAVIGATION */}
-      <nav className="flex justify-between items-center px-4 lg:px-6 py-4 relative bg-white">
+      <nav className="flex justify-between items-center px-4 lg:px-6 py-1 relative bg-white">
         <Link href="/" className="flex items-center">
           <Image 
             src="/images/Logo.png" 
